@@ -1,0 +1,153 @@
+/*PAGINA ARITOS :D*/
+.aritos-titulo{
+    background-color: #c26023bc;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-items: center;
+    padding: 30px;
+    margin-bottom: 30px;
+    gap: 15px;
+}
+.aritos-titulo h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    color: #F7EBE8;
+}
+.aritos-titulo p{
+    font-family: "Playpen Sans", cursive;
+    font-size: 1.5rem;
+    color: #023618;
+}
+/*productos*/
+.aritos-products{
+    display: grid;
+    grid-template-columns:repeat(3,30%);
+    grid-template-rows:repeat(2, 50%);
+    grid-template-areas: 
+     'area1 area2 area3'
+     'area4 area5 area6';
+    gap: 40px;
+    margin: 4%;
+}
+.carta-flores{
+    grid-area: area1;
+    background-color: #240d10a6;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 5px;
+}
+.carta-flores h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #F7EBE8;
+    font-size: 24px;
+    align-self: center;
+}
+.carta-flores h4{
+    font-family: "Playpen Sans", cursive;
+    font-size: 14px;
+    color: #F7EBE8;
+    align-self: center;
+}
+.chanchito{
+    grid-area: area2;
+    background-color: #240d10a6;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 5px;
+}
+.chanchito h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #F7EBE8;
+    font-size: 24px;
+    align-self: center;
+}
+.chanchito h4{
+    font-family: "Playpen Sans", cursive;
+    font-size: 14px;
+    color: #F7EBE8;
+    align-self: center;
+}
+.reliquias-kuromis{
+    grid-area: area3;
+    background-color: #240d10a6;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 5px;
+}
+.reliquias-kuromis h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #F7EBE8;
+    font-size: 24px;
+    align-self: center;
+}
+.reliquias-kuromis h4{
+    font-family: "Playpen Sans", cursive;
+    font-size: 14px;
+    color: #F7EBE8;
+    align-self: center;
+}
+.eclipse{
+    grid-area: area4;
+    background-color: #240d10a6;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 5px;
+}
+.eclipse h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #F7EBE8;
+    font-size: 24px;
+    align-self: center;
+}
+.eclipse h4{
+    font-family: "Playpen Sans", cursive;
+    font-size: 14px;
+    color: #F7EBE8;
+    align-self: center;
+}
+.veneno{
+    grid-area: area5;
+    background-color: #240d10a6;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 5px;
+}
+.veneno h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #F7EBE8;
+    font-size: 24px;
+    align-self: center;
+}
+.veneno h4{
+    font-family: "Playpen Sans", cursive;
+    font-size: 14px;
+    color: #F7EBE8;
+    align-self: center;
+}
+.cruces{
+    grid-area: area6;
+    background-color: #240d10a6;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 5px;
+}
+.cruces h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #F7EBE8;
+    font-size: 24px;
+    align-self: center;
+}
+.cruces h4{
+    font-family: "Playpen Sans", cursive;
+    font-size: 14px;
+    color: #F7EBE8;
+    align-self: center;
+}

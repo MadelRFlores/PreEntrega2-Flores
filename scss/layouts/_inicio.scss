@@ -1,0 +1,167 @@
+/*Cuerpo pagina principal arriba*/
+
+.main-basic {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 13%;
+    background-color: #c26023bc;
+}
+
+.main-basic-left {
+    color: #023618;
+    width: 40%;
+    align-self: center;
+    justify-self: center;
+}
+
+.main-basic p {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 2rem;
+}
+
+.main-basic-about {
+    text-decoration: none;
+    font-family: "Playpen Sans", cursive;
+    font-size: 1.5rem;
+    color: #230C0F;
+}
+
+.main-basic img {
+    height: 400px;
+    width: 400px;
+    margin-right: 2rem;
+    border-radius: 400px;
+}
+
+/*cuerpo pagina principal abajito(?)*/
+
+.main-redes {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 8%;
+    padding: 40px;
+    background-color: #023618ec;
+    border-color: #230C0F;
+    border-style: groove;
+}
+
+.main-redes h2 {
+    font-size: x-large;
+    color: #F7EBE8;
+    font-family: "Playpen Sans", cursive;
+}
+
+.main-logos {
+    text-decoration: none;
+}
+
+/* pagina principal productos*/
+
+/*ARITOS*/
+.main-aritos{
+    background-color: #c26023bc;
+    display: grid;
+    padding: 30px;
+    margin-bottom: 30px;
+    grid-template-columns: 60%, 40%;
+    grid-template-rows: 1fr, 1fr;
+    grid-template-areas:
+      'area2 area1'
+      'area3 area1'
+}
+
+.main-aritos img{
+    width: 436px;
+    height: 436px;
+    grid-area: area1;
+    justify-self: end;
+    padding-right: 5%;
+}
+.main-aritos-text{
+    grid-area: area2;
+    font-family: "Playpen Sans", cursive;
+    font-size: 35px;
+    align-self: end;
+    justify-self: end;
+}
+.main-aritos-link{
+    grid-area: area3;
+    align-self: start;
+    justify-self: center;
+    font-size: 30px;
+    color: #F7EBE8
+}
+
+/*LLAVEROS*/
+.main-llaveros{
+    background-color: #240d10a6;
+    display: grid; 
+    padding: 30px;
+    margin-bottom: 30px;
+    grid-template-columns: 40%, 60%;
+    grid-template-rows: 1fr, 1fr;
+    grid-template-areas:
+      'area1 area2'
+      'area1 area3'
+}
+
+.main-llaveros img{
+    width: 436px;
+    height: 436px;
+    grid-area: area1;
+    justify-self: start;
+    padding-right: 2%;
+}
+.main-llaveros-text{
+    grid-area: area2;
+    color: #c26023;
+    font-family: "Playpen Sans", cursive;
+    font-size: 35px;
+    align-self: end;
+    justify-self: center;
+}
+.main-llaveros-link{
+    grid-area: area3;
+    align-self: start;
+    justify-self: center;
+    font-size: 30px;
+    color: #F7EBE8
+}
+
+.main-collares{
+    background-color: #c26023bc;
+    display: grid;
+    padding: 30px;
+    margin-bottom: 30px;
+    grid-template-columns: 60%, 40%;
+    grid-template-rows: 1fr, 1fr;
+    grid-template-areas:
+      'area2 area1'
+      'area3 area1'
+}
+
+/*COLLARES*/
+.main-collares img{
+    width: 436px;
+    height: 436px;
+    grid-area: area1;
+    justify-self: end;
+    padding-right: 5%;
+    padding-left: 2%;
+}
+.main-collares-text{
+    grid-area: area2;
+    font-family: "Playpen Sans", cursive;
+    font-size: 35px;
+    align-self: end;
+    justify-self: end;
+}
+.main-collares-link{
+    grid-area: area3;
+    align-self: start;
+    justify-self: center;
+    font-size: 30px;
+    color: #F7EBE8
+}

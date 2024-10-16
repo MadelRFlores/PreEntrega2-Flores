@@ -1,0 +1,213 @@
+/*LLAVEROS*/
+.llaveros-texto{
+    display: grid;
+    grid-template-columns: 40%, 40%;
+    grid-template-rows: 8rem, 5rem;
+    grid-template-areas: 
+    'area1 area2'
+    'area3 area4';
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 20px;
+    width: 100%;
+    height: 40%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #230C0F;
+    background-color: #c26023;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.llaveros-area1{
+    grid-area: area1;
+    align-self: end;
+    justify-self: center;
+    padding: 40px;
+    font-size: 3.5rem;
+    color: #F7EBE8;
+}
+.llaveros-area2{
+    grid-area: area2;
+    align-self: end;
+    justify-self: start;
+    margin-top: 20px;
+    width: 80%;
+    font-size: 22px;
+}
+.llaveros-area3{
+    grid-area: area3;
+    align-self: center;
+    justify-self: center;
+    padding-top: 20px;
+    font-size: 22px;
+    width: 58%;
+}
+.llaveros-instagram{
+    grid-area: area4;
+    align-self: center;
+    justify-self: start;
+    padding-top: 40px;
+    font-size: 22px;
+}
+.llaveros-instagram a{
+    color: #F7EBE8;
+    font-size: 20px;
+}
+ /*mochileros*/
+.llaveros-mochileros{
+    background-color: #240d10a6;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 50%, 50%;
+    grid-template-areas: 
+    'area1 area2 area3 area4'
+    'area5 area5 area6 area6';
+    gap: 10px;
+    padding: 30px;
+    margin: 30px;
+}
+.mochileros-a1{
+    grid-area: area1;
+}
+.mochileros-a2{
+    grid-area: area2;
+}
+.mochileros-a3{
+    grid-area: area3;
+}
+.mochileros-a4{
+    grid-area: area4;
+}
+.mochileros-text{
+    grid-area: area5;
+    color: #F7EBE8;
+    font-family: "Playpen Sans", cursive;
+    font-size: 22px;
+    width: 80%;
+    margin-left: 10px;
+}
+.mochileros-precio{
+    grid-area: area6;
+    color: #F7EBE8;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    justify-self: center;
+    align-self: center;
+}
+.llaveros-mochileros img{
+  width: 90%;
+  height: 90%;
+  border-radius: 2%;
+} 
+
+ /*simples*/
+ .llaveros-simples{
+    background-color: #240d10a6;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 50%, 50%;
+    grid-template-areas: 
+    'area1 area2 area3 area4'
+    'area5 area5 area6 area6';
+    gap: 10px;
+    padding: 30px;
+    margin: 30px;
+}
+.simples-a1{
+    grid-area: area1;
+}
+.simples-a2{
+    grid-area: area2;
+}
+.simples-a3{
+    grid-area: area3;
+}
+.simples-a4{
+    grid-area: area4;
+}
+.simples-text{
+    grid-area: area5;
+    color: #F7EBE8;
+    font-family: "Playpen Sans", cursive;
+    font-size: 22px;
+    width: 70%;
+    margin-left: 10px;
+}
+.simples-precio{
+    grid-area: area6;
+    color: #F7EBE8;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    justify-self: center;
+    align-self: center;
+}
+.llaveros-simples img{
+  width: 90%;
+  height: 90%;
+  border-radius: 2%;
+}
+
+ /*decorados*/
+ .llaveros-decorados{
+    background-color: #240d10a6;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 50%, 50%;
+    grid-template-areas: 
+    'area1 area2 area3 area4'
+    'area5 area5 area6 area6';
+    gap: 10px;
+    padding: 30px;
+    margin: 30px;
+}
+.decorados-a1{
+    grid-area: area1;
+}
+.decorados-a2{
+    grid-area: area2;
+}
+.decorados-a3{
+    grid-area: area3;
+}
+.decorados-a4{
+    grid-area: area4;
+}
+.decorados-text{
+    grid-area: area5;
+    color: #F7EBE8;
+    font-family: "Playpen Sans", cursive;
+    font-size: 22px;
+    width: 70%;
+    align-self: center;
+    margin-left: 10px;
+}
+.decorados-precio{
+    grid-area: area6;
+    color: #F7EBE8;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    justify-self: center;
+    align-self: center;
+}
+.llaveros-decorados img{
+  width: 90%;
+  height: 80%;
+  border-radius: 2%;
+}
+
+.llaveros-inspo{
+    display: flex;
+    flex-direction: column;
+    gap: 15%;
+    color: #F7EBE8;
+    font-family: "Playpen Sans", cursive;
+    font-size: 22px;
+    width: 80%;
+    border-radius: 10px;
+    background-color: #023618;
+    padding: 20px;
+    align-items: center;
+    margin-left: 10%;
+}
+.llaveros-inspo a{
+    color: #F7EBE8;
+}

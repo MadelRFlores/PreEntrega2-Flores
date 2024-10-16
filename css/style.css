@@ -83,171 +83,6 @@ header {
   color: #F7EBE8;
 }
 
-/*Cuerpo pagina principal arriba*/
-.main-basic {
-  display: flex;
-  flex-direction: row-reverse;
-  gap: 13%;
-  background-color: rgba(194, 96, 35, 0.737254902);
-}
-
-.main-basic-left {
-  color: #023618;
-  width: 40%;
-  align-self: center;
-  justify-self: center;
-}
-
-.main-basic p {
-  font-size: 20px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  padding-top: 2rem;
-}
-
-.main-basic-about {
-  text-decoration: none;
-  font-family: "Playpen Sans", cursive;
-  font-size: 1.5rem;
-  color: #230C0F;
-}
-
-.main-basic img {
-  height: 400px;
-  width: 400px;
-  margin-right: 2rem;
-  border-radius: 400px;
-}
-
-/*cuerpo pagina principal abajito(?)*/
-.main-redes {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  margin: 8%;
-  padding: 40px;
-  background-color: rgba(2, 54, 24, 0.9254901961);
-  border-color: #230C0F;
-  border-style: groove;
-}
-
-.main-redes h2 {
-  font-size: x-large;
-  color: #F7EBE8;
-  font-family: "Playpen Sans", cursive;
-}
-
-.main-logos {
-  text-decoration: none;
-}
-
-/* pagina principal productos*/
-/*ARITOS*/
-.main-aritos {
-  background-color: rgba(194, 96, 35, 0.737254902);
-  display: grid;
-  padding: 30px;
-  margin-bottom: 30px;
-  grid-template-columns: 60%, 40%;
-  grid-template-rows: 1fr, 1fr;
-  grid-template-areas: "area2 area1" "area3 area1";
-}
-
-.main-aritos img {
-  width: 436px;
-  height: 436px;
-  grid-area: area1;
-  justify-self: end;
-  padding-right: 5%;
-}
-
-.main-aritos-text {
-  grid-area: area2;
-  font-family: "Playpen Sans", cursive;
-  font-size: 35px;
-  align-self: end;
-  justify-self: end;
-}
-
-.main-aritos-link {
-  grid-area: area3;
-  align-self: start;
-  justify-self: center;
-  font-size: 30px;
-  color: #F7EBE8;
-}
-
-/*LLAVEROS*/
-.main-llaveros {
-  background-color: rgba(36, 13, 16, 0.6509803922);
-  display: grid;
-  padding: 30px;
-  margin-bottom: 30px;
-  grid-template-columns: 40%, 60%;
-  grid-template-rows: 1fr, 1fr;
-  grid-template-areas: "area1 area2" "area1 area3";
-}
-
-.main-llaveros img {
-  width: 436px;
-  height: 436px;
-  grid-area: area1;
-  justify-self: start;
-  padding-right: 2%;
-}
-
-.main-llaveros-text {
-  grid-area: area2;
-  color: #c26023;
-  font-family: "Playpen Sans", cursive;
-  font-size: 35px;
-  align-self: end;
-  justify-self: center;
-}
-
-.main-llaveros-link {
-  grid-area: area3;
-  align-self: start;
-  justify-self: center;
-  font-size: 30px;
-  color: #F7EBE8;
-}
-
-/*ARITOS*/
-.main-collares {
-  background-color: rgba(194, 96, 35, 0.737254902);
-  display: grid;
-  padding: 30px;
-  margin-bottom: 30px;
-  grid-template-columns: 60%, 40%;
-  grid-template-rows: 1fr, 1fr;
-  grid-template-areas: "area2 area1" "area3 area1";
-}
-
-.main-collares img {
-  width: 436px;
-  height: 436px;
-  grid-area: area1;
-  justify-self: end;
-  padding-right: 5%;
-  padding-left: 2%;
-}
-
-.main-collares-text {
-  grid-area: area2;
-  font-family: "Playpen Sans", cursive;
-  font-size: 35px;
-  align-self: end;
-  justify-self: end;
-}
-
-.main-collares-link {
-  grid-area: area3;
-  align-self: start;
-  justify-self: center;
-  font-size: 30px;
-  color: #F7EBE8;
-}
-
 /*PAGINA ARITOS :D*/
 .aritos-titulo {
   background-color: rgba(194, 96, 35, 0.737254902);
@@ -421,7 +256,438 @@ header {
   align-self: center;
 }
 
-/*FIN ARITOS*/
+/*titulo*/
+.collares-titulo {
+  width: 100%;
+  height: 8rem;
+  background-color: rgba(194, 96, 35, 0.737254902);
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-color: #F7EBE8;
+  border-style: ridge;
+}
+
+.collares-titulo h1 {
+  color: #F7EBE8;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2.5rem;
+  margin-left: 42%;
+  padding-top: 2rem;
+}
+
+/*products*/
+.collares-discos img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+
+.collares-discos {
+  background-color: rgba(36, 13, 16, 0.6509803922);
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: 1fr, 1fr;
+  grid-template-areas: "area1 area2 area3 area4" "area6 area6 area5 area5";
+  align-items: center;
+  justify-items: center;
+  padding: 20px;
+}
+
+.collar-disc-1 {
+  grid-area: area1;
+}
+
+.collar-disc-2 {
+  grid-area: area2;
+}
+
+.collar-disc-3 {
+  grid-area: area3;
+}
+
+.collar-disc-4 {
+  grid-area: area4;
+}
+
+.collar-disc-5 {
+  grid-area: area5;
+  color: #F7EBE8;
+  width: 80%;
+  padding: 30px;
+}
+
+.collar-disc-6 {
+  grid-area: area6;
+  color: #F7EBE8;
+}
+
+/*collar products dijes*/
+.collares-dijes {
+  background-color: rgba(194, 96, 35, 0.737254902);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  gap: 10px;
+}
+
+.collares-dijes h2 {
+  font-size: 25px;
+  align-self: center;
+}
+
+.collares-dijes h3 {
+  font-size: 20px;
+  align-self: center;
+}
+
+.collar-dragon {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  border-color: rgba(36, 13, 16, 0.6509803922);
+  background-color: rgba(36, 13, 16, 0.6509803922);
+  border-style: solid;
+  border-radius: 5%;
+  font-family: "Playpen Sans", cursive;
+  color: #F7EBE8;
+}
+
+.collar-dragon img {
+  width: 18rem;
+  height: 18rem;
+  border-radius: 5%;
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 0%;
+}
+
+.collar-piece {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  border-color: rgba(36, 13, 16, 0.6509803922);
+  background-color: rgba(36, 13, 16, 0.6509803922);
+  border-style: solid;
+  border-radius: 5%;
+  font-family: "Playpen Sans", cursive;
+  color: #F7EBE8;
+}
+
+.collar-piece img {
+  width: 18rem;
+  height: 18rem;
+  object-fit: cover;
+  border-radius: 5%;
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 0%;
+}
+
+.collar-llave {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  border-color: rgba(36, 13, 16, 0.6509803922);
+  background-color: rgba(36, 13, 16, 0.6509803922);
+  border-style: solid;
+  border-radius: 5%;
+  font-family: "Playpen Sans", cursive;
+  color: #F7EBE8;
+}
+
+.collar-llave img {
+  width: 18rem;
+  height: 18rem;
+  object-fit: cover;
+  border-radius: 5%;
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 0%;
+}
+
+.collar-tarot {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  border-color: rgba(36, 13, 16, 0.6509803922);
+  background-color: rgba(36, 13, 16, 0.6509803922);
+  border-style: solid;
+  border-radius: 5%;
+  font-family: "Playpen Sans", cursive;
+  color: #F7EBE8;
+}
+
+.collar-tarot img {
+  width: 18rem;
+  height: 18rem;
+  object-fit: cover;
+  border-radius: 5%;
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 0%;
+}
+
+.info-general {
+  background-color: rgba(36, 13, 16, 0.6509803922);
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.info-general h2 {
+  font-family: "Playpen Sans", cursive;
+  font-size: 24px;
+  color: #F7EBE8;
+}
+
+.info-general p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  color: rgba(2, 54, 24, 0.9254901961);
+}
+
+.information {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.info-quienes {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 260px;
+  height: 360px;
+  background-color: rgba(194, 96, 35, 0.8705882353);
+  padding: 15px;
+  border-radius: 2%;
+  align-items: center;
+}
+
+.info-feria {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 260px;
+  height: 360px;
+  background-color: rgba(194, 96, 35, 0.8705882353);
+  padding: 10px;
+  border-radius: 2%;
+  align-items: center;
+}
+
+.info-collares {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 260px;
+  height: 360px;
+  background-color: rgba(194, 96, 35, 0.8705882353);
+  padding: 15px;
+  border-radius: 2%;
+  align-items: center;
+}
+
+.info-crochet {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 260px;
+  height: 360px;
+  background-color: rgba(194, 96, 35, 0.8705882353);
+  padding: 15px;
+  border-radius: 2%;
+  align-items: center;
+}
+
+.info-druid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 260px;
+  height: 360px;
+  background-color: rgba(194, 96, 35, 0.8705882353);
+  padding: 15px;
+  border-radius: 2%;
+  align-items: center;
+}
+
+.info-dnd {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 260px;
+  height: 360px;
+  background-color: rgba(194, 96, 35, 0.8705882353);
+  padding: 15px;
+  border-radius: 2%;
+  align-items: center;
+}
+
+/*Cuerpo pagina principal arriba*/
+.main-basic {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 13%;
+  background-color: rgba(194, 96, 35, 0.737254902);
+}
+
+.main-basic-left {
+  color: #023618;
+  width: 40%;
+  align-self: center;
+  justify-self: center;
+}
+
+.main-basic p {
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding-top: 2rem;
+}
+
+.main-basic-about {
+  text-decoration: none;
+  font-family: "Playpen Sans", cursive;
+  font-size: 1.5rem;
+  color: #230C0F;
+}
+
+.main-basic img {
+  height: 400px;
+  width: 400px;
+  margin-right: 2rem;
+  border-radius: 400px;
+}
+
+/*cuerpo pagina principal abajito(?)*/
+.main-redes {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin: 8%;
+  padding: 40px;
+  background-color: rgba(2, 54, 24, 0.9254901961);
+  border-color: #230C0F;
+  border-style: groove;
+}
+
+.main-redes h2 {
+  font-size: x-large;
+  color: #F7EBE8;
+  font-family: "Playpen Sans", cursive;
+}
+
+.main-logos {
+  text-decoration: none;
+}
+
+/* pagina principal productos*/
+/*ARITOS*/
+.main-aritos {
+  background-color: rgba(194, 96, 35, 0.737254902);
+  display: grid;
+  padding: 30px;
+  margin-bottom: 30px;
+  grid-template-columns: 60%, 40%;
+  grid-template-rows: 1fr, 1fr;
+  grid-template-areas: "area2 area1" "area3 area1";
+}
+
+.main-aritos img {
+  width: 436px;
+  height: 436px;
+  grid-area: area1;
+  justify-self: end;
+  padding-right: 5%;
+}
+
+.main-aritos-text {
+  grid-area: area2;
+  font-family: "Playpen Sans", cursive;
+  font-size: 35px;
+  align-self: end;
+  justify-self: end;
+}
+
+.main-aritos-link {
+  grid-area: area3;
+  align-self: start;
+  justify-self: center;
+  font-size: 30px;
+  color: #F7EBE8;
+}
+
+/*LLAVEROS*/
+.main-llaveros {
+  background-color: rgba(36, 13, 16, 0.6509803922);
+  display: grid;
+  padding: 30px;
+  margin-bottom: 30px;
+  grid-template-columns: 40%, 60%;
+  grid-template-rows: 1fr, 1fr;
+  grid-template-areas: "area1 area2" "area1 area3";
+}
+
+.main-llaveros img {
+  width: 436px;
+  height: 436px;
+  grid-area: area1;
+  justify-self: start;
+  padding-right: 2%;
+}
+
+.main-llaveros-text {
+  grid-area: area2;
+  color: #c26023;
+  font-family: "Playpen Sans", cursive;
+  font-size: 35px;
+  align-self: end;
+  justify-self: center;
+}
+
+.main-llaveros-link {
+  grid-area: area3;
+  align-self: start;
+  justify-self: center;
+  font-size: 30px;
+  color: #F7EBE8;
+}
+
+.main-collares {
+  background-color: rgba(194, 96, 35, 0.737254902);
+  display: grid;
+  padding: 30px;
+  margin-bottom: 30px;
+  grid-template-columns: 60%, 40%;
+  grid-template-rows: 1fr, 1fr;
+  grid-template-areas: "area2 area1" "area3 area1";
+}
+
+/*COLLARES*/
+.main-collares img {
+  width: 436px;
+  height: 436px;
+  grid-area: area1;
+  justify-self: end;
+  padding-right: 5%;
+  padding-left: 2%;
+}
+
+.main-collares-text {
+  grid-area: area2;
+  font-family: "Playpen Sans", cursive;
+  font-size: 35px;
+  align-self: end;
+  justify-self: end;
+}
+
+.main-collares-link {
+  grid-area: area3;
+  align-self: start;
+  justify-self: center;
+  font-size: 30px;
+  color: #F7EBE8;
+}
+
 /*LLAVEROS*/
 .llaveros-texto {
   display: grid;
@@ -654,276 +920,6 @@ header {
 
 .llaveros-inspo a {
   color: #F7EBE8;
-}
-
-/*fin llaveros*/
-/*pagina collares*/
-/*titulo*/
-.collares-titulo {
-  width: 100%;
-  height: 8rem;
-  background-color: rgba(194, 96, 35, 0.737254902);
-  margin-top: 10px;
-  margin-bottom: 20px;
-  border-color: #F7EBE8;
-  border-style: ridge;
-}
-
-.collares-titulo h1 {
-  color: #F7EBE8;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 2.5rem;
-  margin-left: 42%;
-  padding-top: 2rem;
-}
-
-/*products*/
-.collares-discos img {
-  width: 80%;
-  height: 80%;
-  object-fit: contain;
-}
-
-.collares-discos {
-  background-color: rgba(36, 13, 16, 0.6509803922);
-  display: grid;
-  grid-template-columns: repeat(4, 25%);
-  grid-template-rows: 1fr, 1fr;
-  grid-template-areas: "area1 area2 area3 area4" "area6 area6 area5 area5";
-  align-items: center;
-  justify-items: center;
-  padding: 20px;
-}
-
-.collar-disc-1 {
-  grid-area: area1;
-}
-
-.collar-disc-2 {
-  grid-area: area2;
-}
-
-.collar-disc-3 {
-  grid-area: area3;
-}
-
-.collar-disc-4 {
-  grid-area: area4;
-}
-
-.collar-disc-5 {
-  grid-area: area5;
-  color: #F7EBE8;
-  width: 80%;
-  padding: 30px;
-}
-
-.collar-disc-6 {
-  grid-area: area6;
-  color: #F7EBE8;
-}
-
-/*collar products dijes*/
-.collares-dijes {
-  background-color: rgba(194, 96, 35, 0.737254902);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  gap: 10px;
-}
-
-.collares-dijes h2 {
-  font-size: 25px;
-  align-self: center;
-}
-
-.collares-dijes h3 {
-  font-size: 20px;
-  align-self: center;
-}
-
-.collar-dragon {
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  border-color: rgba(36, 13, 16, 0.6509803922);
-  background-color: rgba(36, 13, 16, 0.6509803922);
-  border-style: solid;
-  border-radius: 5%;
-  font-family: "Playpen Sans", cursive;
-  color: #F7EBE8;
-}
-
-.collar-dragon img {
-  width: 18rem;
-  height: 18rem;
-  border-radius: 5%;
-  border-bottom-left-radius: 0%;
-  border-bottom-right-radius: 0%;
-}
-
-.collar-piece {
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  border-color: rgba(36, 13, 16, 0.6509803922);
-  background-color: rgba(36, 13, 16, 0.6509803922);
-  border-style: solid;
-  border-radius: 5%;
-  font-family: "Playpen Sans", cursive;
-  color: #F7EBE8;
-}
-
-.collar-piece img {
-  width: 18rem;
-  height: 18rem;
-  object-fit: cover;
-  border-radius: 5%;
-  border-bottom-left-radius: 0%;
-  border-bottom-right-radius: 0%;
-}
-
-.collar-llave {
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  border-color: rgba(36, 13, 16, 0.6509803922);
-  background-color: rgba(36, 13, 16, 0.6509803922);
-  border-style: solid;
-  border-radius: 5%;
-  font-family: "Playpen Sans", cursive;
-  color: #F7EBE8;
-}
-
-.collar-llave img {
-  width: 18rem;
-  height: 18rem;
-  object-fit: cover;
-  border-radius: 5%;
-  border-bottom-left-radius: 0%;
-  border-bottom-right-radius: 0%;
-}
-
-.collar-tarot {
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  border-color: rgba(36, 13, 16, 0.6509803922);
-  background-color: rgba(36, 13, 16, 0.6509803922);
-  border-style: solid;
-  border-radius: 5%;
-  font-family: "Playpen Sans", cursive;
-  color: #F7EBE8;
-}
-
-.collar-tarot img {
-  width: 18rem;
-  height: 18rem;
-  object-fit: cover;
-  border-radius: 5%;
-  border-bottom-left-radius: 0%;
-  border-bottom-right-radius: 0%;
-}
-
-/*pagina sobre druid*/
-.info-general {
-  background-color: rgba(36, 13, 16, 0.6509803922);
-  padding: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.info-general h2 {
-  font-family: "Playpen Sans", cursive;
-  font-size: 24px;
-  color: #F7EBE8;
-}
-
-.info-general p {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 18px;
-  color: rgba(2, 54, 24, 0.9254901961);
-}
-
-.information {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
-}
-
-.info-quienes {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 260px;
-  height: 360px;
-  background-color: rgba(194, 96, 35, 0.8705882353);
-  padding: 15px;
-  border-radius: 2%;
-  align-items: center;
-}
-
-.info-feria {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 260px;
-  height: 360px;
-  background-color: rgba(194, 96, 35, 0.8705882353);
-  padding: 10px;
-  border-radius: 2%;
-  align-items: center;
-}
-
-.info-collares {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 260px;
-  height: 360px;
-  background-color: rgba(194, 96, 35, 0.8705882353);
-  padding: 15px;
-  border-radius: 2%;
-  align-items: center;
-}
-
-.info-crochet {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 260px;
-  height: 360px;
-  background-color: rgba(194, 96, 35, 0.8705882353);
-  padding: 15px;
-  border-radius: 2%;
-  align-items: center;
-}
-
-.info-druid {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 260px;
-  height: 360px;
-  background-color: rgba(194, 96, 35, 0.8705882353);
-  padding: 15px;
-  border-radius: 2%;
-  align-items: center;
-}
-
-.info-dnd {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 260px;
-  height: 360px;
-  background-color: rgba(194, 96, 35, 0.8705882353);
-  padding: 15px;
-  border-radius: 2%;
-  align-items: center;
 }
 
 @media (max-width: 790px) {

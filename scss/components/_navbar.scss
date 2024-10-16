@@ -1,0 +1,31 @@
+/*header todo bonito*/
+header {
+    background-color: #240d10a6;
+    width: 100%;
+    height: min-content;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.header-ul {
+    width: 100%;
+    display: flex;
+    padding-top: 0.5rem;
+    gap: 5%;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-link {
+    color: #F7EBE8;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 22px;
+    transition: 0.8s;
+}
+
+.header-link:hover {
+    font-size: 26px;
+    padding-top: 0.4%;
+}

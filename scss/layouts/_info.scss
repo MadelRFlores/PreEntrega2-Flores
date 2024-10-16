@@ -1,0 +1,90 @@
+.info-general{
+    background-color: #240d10a6;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.info-general h2{
+    font-family: "Playpen Sans", cursive;
+    font-size: 24px;
+    color: #F7EBE8;
+}
+.info-general p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: #023618ec;
+}
+
+.information{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.info-quienes{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 260px;
+    height: 360px;
+    background-color: #c26023de;
+    padding: 15px;
+    border-radius: 2%;
+    align-items: center;
+}
+.info-feria{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 260px;
+    height: 360px;
+    background-color: #c26023de;
+    padding: 10px;
+    border-radius: 2%;
+    align-items: center;
+}
+.info-collares{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 260px;
+    height: 360px;
+    background-color: #c26023de;
+    padding: 15px;
+    border-radius: 2%;
+    align-items: center;
+}
+.info-crochet{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 260px;
+    height: 360px;
+    background-color: #c26023de;
+    padding: 15px;
+    border-radius: 2%;
+    align-items: center;
+}
+.info-druid{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 260px;
+    height: 360px;
+    background-color: #c26023de;
+    padding: 15px;
+    border-radius: 2%;
+    align-items: center;
+}
+.info-dnd{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 260px;
+    height: 360px;
+    background-color: #c26023de;
+    padding: 15px;
+    border-radius: 2%;
+    align-items: center;
+}

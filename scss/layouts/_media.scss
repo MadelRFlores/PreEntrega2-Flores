@@ -1,0 +1,126 @@
+
+@media (max-width: 790px) {
+
+    /*header, preguntar como hacer un dropdown*/
+    header {
+        height: fit-content;
+    }
+
+    .header-ul {
+        align-items: center;
+        justify-content: center;
+        font-size: medium;
+        padding-top: 0.3rem;
+    }
+    .header-link{
+        font-size: 18px;
+    }
+
+    /*fin header chiquito*/
+    /*footer chiquito*/
+    footer {
+        height: fit-content;
+    }
+
+    .footer-ul {
+        align-items: center;
+        justify-content: center;
+        font-size: medium;
+        padding-top: 0.3rem;
+    }
+    .footer-link{
+        font-size: 12px;
+    }
+    /*pagina principal*/
+    .main-basic img {
+        width: 62%;
+        height: 62%;
+        padding-top: 10px;
+    }
+    .main-basic-left{
+        width: 100%;
+        text-align: center;
+    }
+
+    .main-basic {
+        font-size: small;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+    .main-redes h2 {
+        font-size: 18px;
+    }
+    .main-basic p {
+        width: 100%;
+    }
+    .main-aritos img{
+        width: 100%;
+        height: 100%;
+    }
+    .main-aritos-text{
+        font-size: 16px;
+    }
+    .main-llaveros img{
+        width: 100%;
+        height: 100%;
+    }
+    .main-llaveros-text{
+        font-size: 16px;
+    }
+    .main-collares img{
+        width: 100%;
+        height: 100%;
+    }
+    .main-collares-text{
+        font-size: 16px;
+    }
+    /*no more pagina principal*/
+
+    /*pagina aritos :D*/
+    .aritos-products{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .aritos-products img{
+        width: 193px;
+        height: 193px;
+    }
+    .reliquias-kuromis h3{
+        font-size: 20px;
+    }
+    /*no more pagina aritos*/
+
+    /*pagina llaveros :D*/
+    .llaveros-texto{
+        padding-left: 0%; 
+        padding-right: 0%;
+    }
+    .llaveros-area1{
+        align-self: start;
+    }
+    /*fin pagina llaveros*/ 
+    /*pagina collares*/
+    .collares-discos{
+        background-color: #240d10a6;
+        display: grid;
+        grid-template-columns: repeat(4, 22%);
+        grid-template-rows: 1fr, 1fr ;
+        grid-template-areas: 
+        'area1 area2 area5 area5'
+        'area6 area6 area3 area4';
+        align-items: center;
+        justify-items: center;
+        padding: 10px;
+        gap: 20px;
+    }
+    .collares-discos img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
