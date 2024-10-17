@@ -4,35 +4,37 @@
     display: flex;
     flex-direction: row-reverse;
     gap: 13%;
-    background-color: #c26023bc;
+    background-color: $beige-color;
+
+    .main-basic-left {
+        color: $black-color;
+        width: 40%;
+        align-self: center;
+        justify-self: center;
+    }
+    
+    .main-basic p {
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding-top: 2rem;
+    }
+    
+    .main-basic-about {
+        text-decoration: none;
+        font-family: "Playpen Sans", cursive;
+        font-size: 1.5rem;
+        color: $black-color;
+    }
+    
+    .main-basic img {
+        height: 400px;
+        width: 400px;
+        margin-right: 2rem;
+        border-radius: 400px;
+    }
 }
 
-.main-basic-left {
-    color: #023618;
-    width: 40%;
-    align-self: center;
-    justify-self: center;
-}
 
-.main-basic p {
-    font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    padding-top: 2rem;
-}
-
-.main-basic-about {
-    text-decoration: none;
-    font-family: "Playpen Sans", cursive;
-    font-size: 1.5rem;
-    color: #230C0F;
-}
-
-.main-basic img {
-    height: 400px;
-    width: 400px;
-    margin-right: 2rem;
-    border-radius: 400px;
-}
 
 /*cuerpo pagina principal abajito(?)*/
 
@@ -42,23 +44,21 @@
     gap: 50px;
     margin: 8%;
     padding: 40px;
-    background-color: #023618ec;
-    border-color: #230C0F;
+    background-color: $blue-color;
+    border-color: $black-color;
     border-style: groove;
-}
 
-.main-redes h2 {
-    font-size: x-large;
-    color: #F7EBE8;
-    font-family: "Playpen Sans", cursive;
-}
-
-.main-logos {
-    text-decoration: none;
+    .main-redes h2 {
+        font-size: x-large;
+        color: $white-color;
+        font-family: "Playpen Sans", cursive;
+    }
+    .main-logos {
+        text-decoration: none;
+    }
 }
 
 /* pagina principal productos*/
-
 /*ARITOS*/
 .main-aritos{
     background-color: #c26023bc;
@@ -107,29 +107,10 @@
       'area1 area3'
 }
 
-.main-llaveros img{
-    width: 436px;
-    height: 436px;
-    grid-area: area1;
-    justify-self: start;
-    padding-right: 2%;
-}
-.main-llaveros-text{
-    grid-area: area2;
-    color: #c26023;
-    font-family: "Playpen Sans", cursive;
-    font-size: 35px;
-    align-self: end;
-    justify-self: center;
-}
-.main-llaveros-link{
-    grid-area: area3;
-    align-self: start;
-    justify-self: center;
-    font-size: 30px;
-    color: #F7EBE8
-}
 
+
+
+/*COLLARES*/
 .main-collares{
     background-color: #c26023bc;
     display: grid;
@@ -142,7 +123,6 @@
       'area3 area1'
 }
 
-/*COLLARES*/
 .main-collares img{
     width: 436px;
     height: 436px;
