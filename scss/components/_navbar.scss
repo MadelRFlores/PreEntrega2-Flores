@@ -1,6 +1,6 @@
 /*header todo bonito*/
 header {
-    background-color: #240d10a6;
+    background-color: $blue-color;
     width: 100%;
     height: min-content;
     text-align: center;
@@ -18,7 +18,7 @@ header {
 }
 
 .header-link {
-    color: #F7EBE8;
+    color: $white-color;
     text-decoration: none;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 22px;

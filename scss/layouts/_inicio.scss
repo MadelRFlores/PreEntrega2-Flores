@@ -1,14 +1,19 @@
+body{
+    background-color: $green-color;
+}
+
 /*Cuerpo pagina principal arriba*/
 
 .main-basic {
     display: flex;
     flex-direction: row-reverse;
-    gap: 13%;
-    background-color: $beige-color;
+    background-color: $green-color;
+    align-items: center;
+    justify-content: center;
 
     .main-basic-left {
-        color: $black-color;
-        width: 40%;
+        color: $white-color;
+        max-width: 500px;
         align-self: center;
         justify-self: center;
     }
@@ -34,27 +39,37 @@
     }
 }
 
-
-
 /*cuerpo pagina principal abajito(?)*/
 
 .main-redes {
     display: flex;
+    align-items: center;
     justify-content: center;
     gap: 50px;
-    margin: 8%;
-    padding: 40px;
+    margin-bottom: 8%;
+    margin-left: 30%;
+    padding: 25px;
+    width: fit-content;
     background-color: $blue-color;
     border-color: $black-color;
     border-style: groove;
+    color: $white-color;
 
     .main-redes h2 {
         font-size: x-large;
-        color: $white-color;
         font-family: "Playpen Sans", cursive;
     }
     .main-logos {
         text-decoration: none;
+        a svg{
+            width: 40px;
+            height: 40px;
+            color: $white-color;
+            transition: 0.5s;
+            &:hover{
+                transform:scale(1.2)
+            }
+        }
     }
 }
 
@@ -69,34 +84,34 @@
     grid-template-rows: 1fr, 1fr;
     grid-template-areas:
       'area2 area1'
-      'area3 area1'
-}
-
-.main-aritos img{
+      'area3 area1';
+  & img{
     width: 436px;
     height: 436px;
     grid-area: area1;
     justify-self: end;
     padding-right: 5%;
+  }
 }
-.main-aritos-text{
+ .main-aritos-text{
     grid-area: area2;
     font-family: "Playpen Sans", cursive;
     font-size: 35px;
     align-self: end;
     justify-self: end;
-}
-.main-aritos-link{
+ }
+ .main-aritos-link{
     grid-area: area3;
     align-self: start;
     justify-self: center;
     font-size: 30px;
     color: #F7EBE8
-}
+ }
+
 
 /*LLAVEROS*/
 .main-llaveros{
-    background-color: #240d10a6;
+    background-color: $black-color;
     display: grid; 
     padding: 30px;
     margin-bottom: 30px;

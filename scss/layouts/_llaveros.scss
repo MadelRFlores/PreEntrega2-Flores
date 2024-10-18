@@ -16,45 +16,49 @@
     background-color: #c26023;
     margin-top: 30px;
     margin-bottom: 30px;
+
+    .llaveros-area1{
+        grid-area: area1;
+        align-self: end;
+        justify-self: center;
+        padding: 40px;
+        font-size: 3.5rem;
+        color: #F7EBE8;
+    }
+    .llaveros-area2{
+        grid-area: area2;
+        align-self: end;
+        justify-self: start;
+        margin-top: 20px;
+        width: 80%;
+        font-size: 22px;
+    }
+    .llaveros-area3{
+        grid-area: area3;
+        align-self: center;
+        justify-self: center;
+        padding-top: 20px;
+        font-size: 22px;
+        width: 58%;
+    }
 }
-.llaveros-area1{
-    grid-area: area1;
-    align-self: end;
-    justify-self: center;
-    padding: 40px;
-    font-size: 3.5rem;
-    color: #F7EBE8;
-}
-.llaveros-area2{
-    grid-area: area2;
-    align-self: end;
-    justify-self: start;
-    margin-top: 20px;
-    width: 80%;
-    font-size: 22px;
-}
-.llaveros-area3{
-    grid-area: area3;
-    align-self: center;
-    justify-self: center;
-    padding-top: 20px;
-    font-size: 22px;
-    width: 58%;
-}
+
 .llaveros-instagram{
     grid-area: area4;
     align-self: center;
     justify-self: start;
     padding-top: 40px;
     font-size: 22px;
+
+    .llaveros-instagram a{
+        color: #F7EBE8;
+        font-size: 20px;
+    }
 }
-.llaveros-instagram a{
-    color: #F7EBE8;
-    font-size: 20px;
-}
+
  /*mochileros*/
 .llaveros-mochileros{
-    background-color: #240d10a6;
+    background-color: $black-color;
     border-radius: 5px;
     display: grid;
     grid-template-columns: repeat(4, 25%);
@@ -101,7 +105,7 @@
 
  /*simples*/
  .llaveros-simples{
-    background-color: #240d10a6;
+    background-color: $black-color;
     border-radius: 5px;
     display: grid;
     grid-template-columns: repeat(4, 25%);
@@ -148,7 +152,7 @@
 
  /*decorados*/
  .llaveros-decorados{
-    background-color: #240d10a6;
+    background-color: $black-color;
     border-radius: 5px;
     display: grid;
     grid-template-columns: repeat(4, 25%);

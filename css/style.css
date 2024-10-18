@@ -10,15 +10,17 @@ p {
   margin: 0;
 }
 
-body {
-  background-image: url(../images/banner.png);
-  background-size: cover;
-  background-attachment: fixed;
+/*colorcitos*/
+.subtitle, .carta-flores .carta-flores h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #F7EBE8;
+  font-size: 24px;
+  align-self: center;
 }
 
 /*header todo bonito*/
 header {
-  background-color: rgba(36, 13, 16, 0.6509803922);
+  background-color: #334f57;
   width: 100%;
   height: min-content;
   text-align: center;
@@ -36,7 +38,7 @@ header {
 }
 
 .header-link {
-  color: #F7EBE8;
+  color: #f9fedc;
   text-decoration: none;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 22px;
@@ -83,7 +85,6 @@ header {
   color: #F7EBE8;
 }
 
-/*PAGINA ARITOS :D*/
 .aritos-titulo {
   background-color: rgba(194, 96, 35, 0.737254902);
   display: flex;
@@ -95,14 +96,12 @@ header {
   margin-bottom: 30px;
   gap: 15px;
 }
-
-.aritos-titulo h1 {
+.aritos-titulo .aritos-titulo h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 3rem;
   color: #F7EBE8;
 }
-
-.aritos-titulo p {
+.aritos-titulo .aritos-titulo p {
   font-family: "Playpen Sans", cursive;
   font-size: 1.5rem;
   color: #023618;
@@ -126,15 +125,7 @@ header {
   padding: 10px;
   gap: 5px;
 }
-
-.carta-flores h3 {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: #F7EBE8;
-  font-size: 24px;
-  align-self: center;
-}
-
-.carta-flores h4 {
+.carta-flores .carta-flores h4 {
   font-family: "Playpen Sans", cursive;
   font-size: 14px;
   color: #F7EBE8;
@@ -149,15 +140,13 @@ header {
   padding: 10px;
   gap: 5px;
 }
-
-.chanchito h3 {
+.chanchito .chanchito h3 {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #F7EBE8;
   font-size: 24px;
   align-self: center;
 }
-
-.chanchito h4 {
+.chanchito .chanchito h4 {
   font-family: "Playpen Sans", cursive;
   font-size: 14px;
   color: #F7EBE8;
@@ -172,15 +161,13 @@ header {
   padding: 10px;
   gap: 5px;
 }
-
-.reliquias-kuromis h3 {
+.reliquias-kuromis .reliquias-kuromis h3 {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #F7EBE8;
   font-size: 24px;
   align-self: center;
 }
-
-.reliquias-kuromis h4 {
+.reliquias-kuromis .reliquias-kuromis h4 {
   font-family: "Playpen Sans", cursive;
   font-size: 14px;
   color: #F7EBE8;
@@ -195,15 +182,13 @@ header {
   padding: 10px;
   gap: 5px;
 }
-
-.eclipse h3 {
+.eclipse .eclipse h3 {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #F7EBE8;
   font-size: 24px;
   align-self: center;
 }
-
-.eclipse h4 {
+.eclipse .eclipse h4 {
   font-family: "Playpen Sans", cursive;
   font-size: 14px;
   color: #F7EBE8;
@@ -218,15 +203,13 @@ header {
   padding: 10px;
   gap: 5px;
 }
-
-.veneno h3 {
+.veneno .veneno h3 {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #F7EBE8;
   font-size: 24px;
   align-self: center;
 }
-
-.veneno h4 {
+.veneno .veneno h4 {
   font-family: "Playpen Sans", cursive;
   font-size: 14px;
   color: #F7EBE8;
@@ -241,15 +224,13 @@ header {
   padding: 10px;
   gap: 5px;
 }
-
-.cruces h3 {
+.cruces .cruces h3 {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #F7EBE8;
   font-size: 24px;
   align-self: center;
 }
-
-.cruces h4 {
+.cruces .cruces h4 {
   font-family: "Playpen Sans", cursive;
   font-size: 14px;
   color: #F7EBE8;
@@ -426,7 +407,7 @@ header {
 }
 
 .info-general {
-  background-color: rgba(36, 13, 16, 0.6509803922);
+  background-color: #1d1212;
   padding: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -523,35 +504,36 @@ header {
   align-items: center;
 }
 
+body {
+  background-color: #8B9E61;
+}
+
 /*Cuerpo pagina principal arriba*/
 .main-basic {
   display: flex;
   flex-direction: row-reverse;
-  gap: 13%;
-  background-color: rgba(194, 96, 35, 0.737254902);
+  background-color: #8B9E61;
+  align-items: center;
+  justify-content: center;
 }
-
-.main-basic-left {
-  color: #023618;
-  width: 40%;
+.main-basic .main-basic-left {
+  color: #f9fedc;
+  max-width: 500px;
   align-self: center;
   justify-self: center;
 }
-
-.main-basic p {
+.main-basic .main-basic p {
   font-size: 20px;
   font-family: Georgia, "Times New Roman", Times, serif;
   padding-top: 2rem;
 }
-
-.main-basic-about {
+.main-basic .main-basic-about {
   text-decoration: none;
   font-family: "Playpen Sans", cursive;
   font-size: 1.5rem;
-  color: #230C0F;
+  color: #1d1212;
 }
-
-.main-basic img {
+.main-basic .main-basic img {
   height: 400px;
   width: 400px;
   margin-right: 2rem;
@@ -561,23 +543,33 @@ header {
 /*cuerpo pagina principal abajito(?)*/
 .main-redes {
   display: flex;
+  align-items: center;
   justify-content: center;
   gap: 50px;
-  margin: 8%;
-  padding: 40px;
-  background-color: rgba(2, 54, 24, 0.9254901961);
-  border-color: #230C0F;
+  margin-bottom: 8%;
+  margin-left: 30%;
+  padding: 25px;
+  width: fit-content;
+  background-color: #334f57;
+  border-color: #1d1212;
   border-style: groove;
+  color: #f9fedc;
 }
-
-.main-redes h2 {
+.main-redes .main-redes h2 {
   font-size: x-large;
-  color: #F7EBE8;
   font-family: "Playpen Sans", cursive;
 }
-
-.main-logos {
+.main-redes .main-logos {
   text-decoration: none;
+}
+.main-redes .main-logos a svg {
+  width: 40px;
+  height: 40px;
+  color: #f9fedc;
+  transition: 0.5s;
+}
+.main-redes .main-logos a svg:hover {
+  transform: scale(1.2);
 }
 
 /* pagina principal productos*/
@@ -591,7 +583,6 @@ header {
   grid-template-rows: 1fr, 1fr;
   grid-template-areas: "area2 area1" "area3 area1";
 }
-
 .main-aritos img {
   width: 436px;
   height: 436px;
@@ -618,7 +609,7 @@ header {
 
 /*LLAVEROS*/
 .main-llaveros {
-  background-color: rgba(36, 13, 16, 0.6509803922);
+  background-color: #1d1212;
   display: grid;
   padding: 30px;
   margin-bottom: 30px;
@@ -627,31 +618,7 @@ header {
   grid-template-areas: "area1 area2" "area1 area3";
 }
 
-.main-llaveros img {
-  width: 436px;
-  height: 436px;
-  grid-area: area1;
-  justify-self: start;
-  padding-right: 2%;
-}
-
-.main-llaveros-text {
-  grid-area: area2;
-  color: #c26023;
-  font-family: "Playpen Sans", cursive;
-  font-size: 35px;
-  align-self: end;
-  justify-self: center;
-}
-
-.main-llaveros-link {
-  grid-area: area3;
-  align-self: start;
-  justify-self: center;
-  font-size: 30px;
-  color: #F7EBE8;
-}
-
+/*COLLARES*/
 .main-collares {
   background-color: rgba(194, 96, 35, 0.737254902);
   display: grid;
@@ -662,7 +629,6 @@ header {
   grid-template-areas: "area2 area1" "area3 area1";
 }
 
-/*COLLARES*/
 .main-collares img {
   width: 436px;
   height: 436px;
@@ -705,8 +671,7 @@ header {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-
-.llaveros-area1 {
+.llaveros-texto .llaveros-area1 {
   grid-area: area1;
   align-self: end;
   justify-self: center;
@@ -714,8 +679,7 @@ header {
   font-size: 3.5rem;
   color: #F7EBE8;
 }
-
-.llaveros-area2 {
+.llaveros-texto .llaveros-area2 {
   grid-area: area2;
   align-self: end;
   justify-self: start;
@@ -723,8 +687,7 @@ header {
   width: 80%;
   font-size: 22px;
 }
-
-.llaveros-area3 {
+.llaveros-texto .llaveros-area3 {
   grid-area: area3;
   align-self: center;
   justify-self: center;
@@ -740,15 +703,14 @@ header {
   padding-top: 40px;
   font-size: 22px;
 }
-
-.llaveros-instagram a {
+.llaveros-instagram .llaveros-instagram a {
   color: #F7EBE8;
   font-size: 20px;
 }
 
 /*mochileros*/
 .llaveros-mochileros {
-  background-color: rgba(36, 13, 16, 0.6509803922);
+  background-color: #1d1212;
   border-radius: 5px;
   display: grid;
   grid-template-columns: repeat(4, 25%);
@@ -800,7 +762,7 @@ header {
 
 /*simples*/
 .llaveros-simples {
-  background-color: rgba(36, 13, 16, 0.6509803922);
+  background-color: #1d1212;
   border-radius: 5px;
   display: grid;
   grid-template-columns: repeat(4, 25%);
@@ -852,7 +814,7 @@ header {
 
 /*decorados*/
 .llaveros-decorados {
-  background-color: rgba(36, 13, 16, 0.6509803922);
+  background-color: #1d1212;
   border-radius: 5px;
   display: grid;
   grid-template-columns: repeat(4, 25%);
@@ -927,13 +889,13 @@ header {
   header {
     height: fit-content;
   }
-  .header-ul {
+  header .header-ul {
     align-items: center;
     justify-content: center;
     font-size: medium;
     padding-top: 0.3rem;
   }
-  .header-link {
+  header .header-link {
     font-size: 18px;
   }
   /*fin header chiquito*/
@@ -941,21 +903,16 @@ header {
   footer {
     height: fit-content;
   }
-  .footer-ul {
+  footer .footer-ul {
     align-items: center;
     justify-content: center;
     font-size: medium;
     padding-top: 0.3rem;
   }
-  .footer-link {
+  footer .footer-link {
     font-size: 12px;
   }
   /*pagina principal*/
-  .main-basic img {
-    width: 62%;
-    height: 62%;
-    padding-top: 10px;
-  }
   .main-basic-left {
     width: 100%;
     text-align: center;
@@ -968,18 +925,20 @@ header {
     justify-content: center;
     padding-bottom: 30px;
   }
+  .main-basic .main-basic img {
+    width: 62%;
+    height: 62%;
+    padding-top: 10px;
+  }
+  .main-basic .main-basic p {
+    width: 100%;
+  }
   .main-redes h2 {
     font-size: 18px;
-  }
-  .main-basic p {
-    width: 100%;
   }
   .main-aritos img {
     width: 100%;
     height: 100%;
-  }
-  .main-aritos-text {
-    font-size: 16px;
   }
   .main-llaveros img {
     width: 100%;
@@ -1003,7 +962,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  .aritos-products img {
+  .aritos-products .aritos-products img {
     width: 193px;
     height: 193px;
   }
@@ -1022,7 +981,7 @@ header {
   /*fin pagina llaveros*/
   /*pagina collares*/
   .collares-discos {
-    background-color: rgba(36, 13, 16, 0.6509803922);
+    background-color: #1d1212;
     display: grid;
     grid-template-columns: repeat(4, 22%);
     grid-template-rows: 1fr, 1fr;
@@ -1032,7 +991,7 @@ header {
     padding: 10px;
     gap: 20px;
   }
-  .collares-discos img {
+  .collares-discos .collares-discos img {
     width: 100%;
     height: 100%;
     object-fit: cover;
