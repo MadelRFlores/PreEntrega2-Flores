@@ -1,6 +1,6 @@
 /*footer general*/
 .footer {
-    background-color: #240d10a6;
+    background-color: $blue-color;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -23,10 +23,10 @@
     margin: 0;
 }
 .footer-ul h1{
-    color: #240d10f8;
+    color: $green-color;
     font-size: 1rem;
 }
 .footer-link {
     text-decoration: none;
-    color: #F7EBE8;
+    color: $white-color;
 }

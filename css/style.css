@@ -18,6 +18,21 @@ p {
   align-self: center;
 }
 
+.info-repeat, .info-dnd, .info-druid, .info-crochet, .info-collares, .info-feria, .info-quienes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+  width: 290px;
+  height: 360px;
+  background-color: #334f57;
+  padding: 15px;
+  border-color: rgba(29, 18, 18, 0.8196078431);
+  border-style: double;
+  border-radius: 2%;
+}
+
 /*header todo bonito*/
 header {
   background-color: #334f57;
@@ -46,13 +61,12 @@ header {
 }
 
 .header-link:hover {
-  font-size: 26px;
-  padding-top: 0.4%;
+  font-size: 20px;
 }
 
 /*footer general*/
 .footer {
-  background-color: rgba(36, 13, 16, 0.6509803922);
+  background-color: #334f57;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -76,13 +90,13 @@ header {
 }
 
 .footer-ul h1 {
-  color: rgba(36, 13, 16, 0.9725490196);
+  color: #8B9E61;
   font-size: 1rem;
 }
 
 .footer-link {
   text-decoration: none;
-  color: #F7EBE8;
+  color: #f9fedc;
 }
 
 .aritos-titulo {
@@ -407,22 +421,20 @@ header {
 }
 
 .info-general {
-  background-color: #1d1212;
-  padding: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  background-color: #8B9E61;
+  margin: 40px;
 }
 
 .info-general h2 {
   font-family: "Playpen Sans", cursive;
   font-size: 24px;
-  color: #F7EBE8;
+  color: #f9fedc;
 }
 
 .info-general p {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 18px;
-  color: rgba(2, 54, 24, 0.9254901961);
+  color: #f9fedc;
 }
 
 .information {
@@ -432,76 +444,14 @@ header {
   justify-content: center;
 }
 
-.info-quienes {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 260px;
-  height: 360px;
-  background-color: rgba(194, 96, 35, 0.8705882353);
-  padding: 15px;
-  border-radius: 2%;
-  align-items: center;
+.info-feria a svg {
+  width: 50px;
+  height: 50px;
+  color: #f9fedc;
+  transition: 0.5s;
 }
-
-.info-feria {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 260px;
-  height: 360px;
-  background-color: rgba(194, 96, 35, 0.8705882353);
-  padding: 10px;
-  border-radius: 2%;
-  align-items: center;
-}
-
-.info-collares {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 260px;
-  height: 360px;
-  background-color: rgba(194, 96, 35, 0.8705882353);
-  padding: 15px;
-  border-radius: 2%;
-  align-items: center;
-}
-
-.info-crochet {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 260px;
-  height: 360px;
-  background-color: rgba(194, 96, 35, 0.8705882353);
-  padding: 15px;
-  border-radius: 2%;
-  align-items: center;
-}
-
-.info-druid {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 260px;
-  height: 360px;
-  background-color: rgba(194, 96, 35, 0.8705882353);
-  padding: 15px;
-  border-radius: 2%;
-  align-items: center;
-}
-
-.info-dnd {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 260px;
-  height: 360px;
-  background-color: rgba(194, 96, 35, 0.8705882353);
-  padding: 15px;
-  border-radius: 2%;
-  align-items: center;
+.info-feria a svg:hover {
+  transform: scale(1.2);
 }
 
 body {
