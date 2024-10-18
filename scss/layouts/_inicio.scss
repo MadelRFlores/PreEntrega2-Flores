@@ -76,7 +76,7 @@ body{
 /* pagina principal productos*/
 /*ARITOS*/
 .main-aritos{
-    background-color: #c26023bc;
+    background-color: $blue-color;
     display: grid;
     padding: 30px;
     margin-bottom: 30px;
@@ -92,26 +92,28 @@ body{
     justify-self: end;
     padding-right: 5%;
   }
-}
- .main-aritos-text{
+  .main-aritos-text{
     grid-area: area2;
+    color: $black-color;
     font-family: "Playpen Sans", cursive;
     font-size: 35px;
     align-self: end;
     justify-self: end;
  }
- .main-aritos-link{
+}
+.main-aritos-link{
     grid-area: area3;
+    color: $black-color;
     align-self: start;
     justify-self: center;
     font-size: 30px;
-    color: #F7EBE8
- }
+}
+ 
 
 
 /*LLAVEROS*/
 .main-llaveros{
-    background-color: $black-color;
+    background-color: $blue-color;
     display: grid; 
     padding: 30px;
     margin-bottom: 30px;
@@ -119,15 +121,37 @@ body{
     grid-template-rows: 1fr, 1fr;
     grid-template-areas:
       'area1 area2'
-      'area1 area3'
-}
+      'area1 area3';
+    & img{
+        width: 436px;
+        height: 436px;
+        grid-area: area1;
+        justify-self: end;
+        padding-left: 5%;
+ }
+    .main-llaveros-text{
+        grid-area: area2;
+        color: $black-color;
+        font-family: "Playpen Sans", cursive;
+        font-size: 35px;
+        align-self: end;
+        justify-self: end;
 
+    }
+}
+.main-llaveros-link{
+    grid-area: area3;
+    color: $black-color;
+    align-self: start;
+    justify-self: center;
+    font-size: 30px;
+}
 
 
 
 /*COLLARES*/
 .main-collares{
-    background-color: #c26023bc;
+    background-color: $blue-color;
     display: grid;
     padding: 30px;
     margin-bottom: 30px;
@@ -141,6 +165,7 @@ body{
 .main-collares img{
     width: 436px;
     height: 436px;
+    object-fit: cover;
     grid-area: area1;
     justify-self: end;
     padding-right: 5%;
@@ -158,5 +183,5 @@ body{
     align-self: start;
     justify-self: center;
     font-size: 30px;
-    color: #F7EBE8
+    color: $white-color;
 }

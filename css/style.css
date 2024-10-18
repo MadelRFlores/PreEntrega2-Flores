@@ -575,7 +575,7 @@ body {
 /* pagina principal productos*/
 /*ARITOS*/
 .main-aritos {
-  background-color: rgba(194, 96, 35, 0.737254902);
+  background-color: #334f57;
   display: grid;
   padding: 30px;
   margin-bottom: 30px;
@@ -590,9 +590,9 @@ body {
   justify-self: end;
   padding-right: 5%;
 }
-
-.main-aritos-text {
+.main-aritos .main-aritos-text {
   grid-area: area2;
+  color: #1d1212;
   font-family: "Playpen Sans", cursive;
   font-size: 35px;
   align-self: end;
@@ -601,15 +601,15 @@ body {
 
 .main-aritos-link {
   grid-area: area3;
+  color: #1d1212;
   align-self: start;
   justify-self: center;
   font-size: 30px;
-  color: #F7EBE8;
 }
 
 /*LLAVEROS*/
 .main-llaveros {
-  background-color: #1d1212;
+  background-color: #334f57;
   display: grid;
   padding: 30px;
   margin-bottom: 30px;
@@ -617,10 +617,33 @@ body {
   grid-template-rows: 1fr, 1fr;
   grid-template-areas: "area1 area2" "area1 area3";
 }
+.main-llaveros img {
+  width: 436px;
+  height: 436px;
+  grid-area: area1;
+  justify-self: end;
+  padding-left: 5%;
+}
+.main-llaveros .main-llaveros-text {
+  grid-area: area2;
+  color: #1d1212;
+  font-family: "Playpen Sans", cursive;
+  font-size: 35px;
+  align-self: end;
+  justify-self: end;
+}
+
+.main-llaveros-link {
+  grid-area: area3;
+  color: #1d1212;
+  align-self: start;
+  justify-self: center;
+  font-size: 30px;
+}
 
 /*COLLARES*/
 .main-collares {
-  background-color: rgba(194, 96, 35, 0.737254902);
+  background-color: #334f57;
   display: grid;
   padding: 30px;
   margin-bottom: 30px;
@@ -632,6 +655,7 @@ body {
 .main-collares img {
   width: 436px;
   height: 436px;
+  object-fit: cover;
   grid-area: area1;
   justify-self: end;
   padding-right: 5%;
@@ -651,7 +675,7 @@ body {
   align-self: start;
   justify-self: center;
   font-size: 30px;
-  color: #F7EBE8;
+  color: #f9fedc;
 }
 
 /*LLAVEROS*/
@@ -944,15 +968,11 @@ body {
     width: 100%;
     height: 100%;
   }
-  .main-llaveros-text {
-    font-size: 16px;
-  }
   .main-collares img {
-    width: 100%;
-    height: 100%;
-  }
-  .main-collares-text {
-    font-size: 16px;
+    width: 80%;
+    height: 80%;
+    align-self: center;
+    justify-self: center;
   }
   /*no more pagina principal*/
   /*pagina aritos :D*/
