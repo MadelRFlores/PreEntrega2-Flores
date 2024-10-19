@@ -1,6 +1,6 @@
 
 .aritos-titulo{
-    background-color: #c26023bc;
+    background-color: $beige-color;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -10,15 +10,15 @@
     margin-bottom: 30px;
     gap: 15px;
 
-    .aritos-titulo h1{
+    h1{
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-size: 3rem;
-        color: #F7EBE8;
+        color: $black-color;
     }
-    .aritos-titulo p{
+    p{
         font-family: "Playpen Sans", cursive;
         font-size: 1.5rem;
-        color: #023618;
+        color: $black-color;
     }
 }
 
@@ -36,132 +36,97 @@
 }
 
 
-
 .carta-flores{
     grid-area: area1;
-    background-color: #240d10a6;
+    background-color: $green-color;
     display: flex;
     flex-direction: column;
     padding: 10px;
     gap: 5px;
 
-    .carta-flores h3{
-        @extend .subtitle;
+    h3{
+        @extend .subtitle-h3;
     }
-    .carta-flores h4{
-        font-family: "Playpen Sans", cursive;
-        font-size: 14px;
-        color: #F7EBE8;
-        align-self: center;
+    h4{
+        @extend .subtitle-h4;
     }
 }
 
 .chanchito{
     grid-area: area2;
-    background-color: #240d10a6;
+    background-color: $green-color;
     display: flex;
     flex-direction: column;
     padding: 10px;
     gap: 5px;
 
-    .chanchito h3{
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        color: #F7EBE8;
-        font-size: 24px;
-        align-self: center;
+    h3{
+        @extend .subtitle-h3;
     }
-    .chanchito h4{
-        font-family: "Playpen Sans", cursive;
-        font-size: 14px;
-        color: #F7EBE8;
-        align-self: center;
+    h4{
+        @extend .subtitle-h4;
     }
 }
 
 .reliquias-kuromis{
     grid-area: area3;
-    background-color: #240d10a6;
+    background-color: $green-color;
     display: flex;
     flex-direction: column;
     padding: 10px;
     gap: 5px;
 
-    .reliquias-kuromis h3{
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        color: #F7EBE8;
-        font-size: 24px;
-        align-self: center;
+    h3{
+        @extend .subtitle-h3;
     }
-    .reliquias-kuromis h4{
-        font-family: "Playpen Sans", cursive;
-        font-size: 14px;
-        color: #F7EBE8;
-        align-self: center;
+    h4{
+        @extend .subtitle-h4;
     }
 }
 
 .eclipse{
     grid-area: area4;
-    background-color: #240d10a6;
+    background-color: $green-color;
     display: flex;
     flex-direction: column;
     padding: 10px;
     gap: 5px;
-    .eclipse h3{
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        color: #F7EBE8;
-        font-size: 24px;
-        align-self: center;
+    h3{
+        @extend .subtitle-h3;
     }
-    .eclipse h4{
-        font-family: "Playpen Sans", cursive;
-        font-size: 14px;
-        color: #F7EBE8;
-        align-self: center;
+    h4{
+        @extend .subtitle-h4;
     }
 }
 
 
 .veneno{
     grid-area: area5;
-    background-color: #240d10a6;
+    background-color: $green-color;
     display: flex;
     flex-direction: column;
     padding: 10px;
     gap: 5px;
-
-    .veneno h3{
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        color: #F7EBE8;
-        font-size: 24px;
-        align-self: center;
+    h3{
+        @extend .subtitle-h3;
     }
-    .veneno h4{
-        font-family: "Playpen Sans", cursive;
-        font-size: 14px;
-        color: #F7EBE8;
-        align-self: center;
+    h4{
+        @extend .subtitle-h4;
     }
 }
 
 .cruces{
     grid-area: area6;
-    background-color: #240d10a6;
+    background-color: $green-color;
     display: flex;
     flex-direction: column;
     padding: 10px;
     gap: 5px;
 
-    .cruces h3{
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        color: #F7EBE8;
-        font-size: 24px;
-        align-self: center;
+    h3{
+        @extend .subtitle-h3;
     }
-    .cruces h4{
-        font-family: "Playpen Sans", cursive;
-        font-size: 14px;
-        color: #F7EBE8;
-        align-self: center;
+    h4{
+        @extend .subtitle-h4;
     }
 }
