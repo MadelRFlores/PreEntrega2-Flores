@@ -192,15 +192,14 @@ header {
 .collares-titulo {
   width: 100%;
   height: 8rem;
-  background-color: rgba(194, 96, 35, 0.737254902);
+  background-color: #D9C8B0;
   margin-top: 10px;
   margin-bottom: 20px;
-  border-color: #F7EBE8;
+  border-color: #334f57;
   border-style: ridge;
 }
-
 .collares-titulo h1 {
-  color: #F7EBE8;
+  color: #1d1212;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 2.5rem;
   margin-left: 42%;
@@ -208,14 +207,8 @@ header {
 }
 
 /*products*/
-.collares-discos img {
-  width: 80%;
-  height: 80%;
-  object-fit: contain;
-}
-
 .collares-discos {
-  background-color: rgba(36, 13, 16, 0.6509803922);
+  background-color: #8B9E61;
   display: grid;
   grid-template-columns: repeat(4, 25%);
   grid-template-rows: 1fr, 1fr;
@@ -223,6 +216,11 @@ header {
   align-items: center;
   justify-items: center;
   padding: 20px;
+}
+.collares-discos img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
 }
 
 .collar-disc-1 {
@@ -243,19 +241,19 @@ header {
 
 .collar-disc-5 {
   grid-area: area5;
-  color: #F7EBE8;
+  color: #1d1212;
   width: 80%;
   padding: 30px;
 }
 
 .collar-disc-6 {
   grid-area: area6;
-  color: #F7EBE8;
+  color: #1d1212;
 }
 
 /*collar products dijes*/
 .collares-dijes {
-  background-color: rgba(194, 96, 35, 0.737254902);
+  background-color: #D9C8B0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -274,87 +272,21 @@ header {
   align-self: center;
 }
 
-.collar-dragon {
+.collar-dragon, .collar-tarot, .collar-llave, .collar-piece {
   margin: 10px;
   display: flex;
   flex-direction: column;
-  border-color: rgba(36, 13, 16, 0.6509803922);
-  background-color: rgba(36, 13, 16, 0.6509803922);
+  background-color: #8B9E61;
+  border-color: #8B9E61;
   border-style: solid;
   border-radius: 5%;
   font-family: "Playpen Sans", cursive;
-  color: #F7EBE8;
+  color: #1d1212;
 }
-
-.collar-dragon img {
+.collar-dragon img, .collar-tarot img, .collar-llave img, .collar-piece img {
   width: 18rem;
   height: 18rem;
   border-radius: 5%;
-  border-bottom-left-radius: 0%;
-  border-bottom-right-radius: 0%;
-}
-
-.collar-piece {
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  border-color: rgba(36, 13, 16, 0.6509803922);
-  background-color: rgba(36, 13, 16, 0.6509803922);
-  border-style: solid;
-  border-radius: 5%;
-  font-family: "Playpen Sans", cursive;
-  color: #F7EBE8;
-}
-
-.collar-piece img {
-  width: 18rem;
-  height: 18rem;
-  object-fit: cover;
-  border-radius: 5%;
-  border-bottom-left-radius: 0%;
-  border-bottom-right-radius: 0%;
-}
-
-.collar-llave {
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  border-color: rgba(36, 13, 16, 0.6509803922);
-  background-color: rgba(36, 13, 16, 0.6509803922);
-  border-style: solid;
-  border-radius: 5%;
-  font-family: "Playpen Sans", cursive;
-  color: #F7EBE8;
-}
-
-.collar-llave img {
-  width: 18rem;
-  height: 18rem;
-  object-fit: cover;
-  border-radius: 5%;
-  border-bottom-left-radius: 0%;
-  border-bottom-right-radius: 0%;
-}
-
-.collar-tarot {
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  border-color: rgba(36, 13, 16, 0.6509803922);
-  background-color: rgba(36, 13, 16, 0.6509803922);
-  border-style: solid;
-  border-radius: 5%;
-  font-family: "Playpen Sans", cursive;
-  color: #F7EBE8;
-}
-
-.collar-tarot img {
-  width: 18rem;
-  height: 18rem;
-  object-fit: cover;
-  border-radius: 5%;
-  border-bottom-left-radius: 0%;
-  border-bottom-right-radius: 0%;
 }
 
 .info-general {

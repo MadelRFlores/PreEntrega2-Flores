@@ -2,27 +2,23 @@
 .collares-titulo{
     width: 100%;
     height: 8rem;
-    background-color: #c26023bc;
+    background-color: $beige-color;
     margin-top: 10px;
     margin-bottom: 20px;
-    border-color: #F7EBE8;
+    border-color: $blue-color;
     border-style: ridge;
+    h1{
+        color: $black-color;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 2.5rem;
+        margin-left: 42%;
+        padding-top: 2rem;
+    }
 }   
-.collares-titulo h1{
-    color: #F7EBE8;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 2.5rem;
-    margin-left: 42%;
-    padding-top: 2rem;
-}
+ 
 /*products*/
-.collares-discos img{
-    width: 80%;
-    height: 80%;
-    object-fit: contain;
-}
 .collares-discos{
-    background-color: #240d10a6;
+    background-color: $green-color;
     display: grid;
     grid-template-columns: repeat(4, 25%);
     grid-template-rows: 1fr, 1fr ;
@@ -32,6 +28,11 @@
     align-items: center;
     justify-items: center;
     padding: 20px;
+    img{
+        width: 80%;
+        height: 80%;
+        object-fit: contain;
+    }
 }
 .collar-disc-1{
     grid-area: area1;
@@ -47,19 +48,19 @@
 }
 .collar-disc-5{
     grid-area: area5;
-    color: #F7EBE8;
+    color: $black-color;
     width: 80%;
     padding: 30px;
 }
 .collar-disc-6{
     grid-area: area6;
-    color: #F7EBE8;
+    color: $black-color;
 }
 
 /*collar products dijes*/
 
 .collares-dijes{
-    background-color: #c26023bc;
+    background-color: $beige-color;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -80,78 +81,28 @@
     margin: 10px;
     display: flex;
     flex-direction: column;
-    border-color: #240d10a6;
-    background-color: #240d10a6;
+    background-color: $green-color;
+    border-color: $green-color;
     border-style: solid;
     border-radius: 5%;
     font-family: "Playpen Sans", cursive;
-    color: #F7EBE8;
-}
-.collar-dragon img{
-    width: 18rem;
-    height: 18rem;
-    border-radius: 5%;
-    border-bottom-left-radius: 0%;
-    border-bottom-right-radius: 0%;
+    color: $black-color;
+    img{
+        width: 18rem;
+        height: 18rem;
+        border-radius: 5%;
+    }    
 }
 
 
 .collar-piece{
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    border-color: #240d10a6;
-    background-color: #240d10a6;
-    border-style: solid;
-    border-radius: 5%;
-    font-family: "Playpen Sans", cursive;
-    color: #F7EBE8;
-}
-.collar-piece img{
-    width: 18rem;
-    height: 18rem;
-    object-fit: cover;
-    border-radius: 5%;
-    border-bottom-left-radius: 0%;
-    border-bottom-right-radius: 0%;
+    @extend .collar-dragon;
 }
 
 .collar-llave{
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    border-color: #240d10a6;
-    background-color: #240d10a6;
-    border-style: solid;
-    border-radius: 5%;
-    font-family: "Playpen Sans", cursive;
-    color: #F7EBE8;
-}
-.collar-llave img{
-    width: 18rem;
-    height: 18rem;
-    object-fit: cover;
-    border-radius: 5%;
-    border-bottom-left-radius: 0%;
-    border-bottom-right-radius: 0%;
+    @extend .collar-dragon;
 }
 
 .collar-tarot{
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    border-color: #240d10a6;
-    background-color: #240d10a6;
-    border-style: solid;
-    border-radius: 5%;
-    font-family: "Playpen Sans", cursive;
-    color: #F7EBE8;
-}
-.collar-tarot img{
-    width: 18rem;
-    height: 18rem;
-    object-fit: cover;
-    border-radius: 5%;
-    border-bottom-left-radius: 0%;
-    border-bottom-right-radius: 0%;
+    @extend .collar-dragon;
 }
