@@ -2,6 +2,8 @@
 .collares-titulo{
     width: 100%;
     height: 8rem;
+    display: flex;
+    justify-content: center;
     background-color: $beige-color;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -11,7 +13,6 @@
         color: $black-color;
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-size: 2.5rem;
-        margin-left: 42%;
         padding-top: 2rem;
     }
 }   
@@ -67,15 +68,16 @@
     margin-top: 40px;
     margin-bottom: 40px;
     gap: 10px;
+    h2{
+        font-size: 25px;
+        align-self: center;
+    }
+    h3{
+        font-size: 20px;
+        align-self: center;
+    }
 }
-.collares-dijes h2{
-    font-size: 25px;
-    align-self: center;
-}
-.collares-dijes h3{
-    font-size: 20px;
-    align-self: center;
-}
+
 
 .collar-dragon{
     margin: 10px;
@@ -94,15 +96,24 @@
     }    
 }
 
-
 .collar-piece{
     @extend .collar-dragon;
 }
-
 .collar-llave{
     @extend .collar-dragon;
 }
-
 .collar-tarot{
+    @extend .collar-dragon;
+}
+.collar-beads1{
+    @extend .collar-dragon;
+}
+.collar-beads2{
+    @extend .collar-dragon;
+}
+.collar-beads3{
+    @extend .collar-dragon;
+}
+.collar-beads4{
     @extend .collar-dragon;
 }

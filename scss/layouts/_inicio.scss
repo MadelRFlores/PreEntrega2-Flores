@@ -6,6 +6,8 @@ body{
 .main-basic {
     display: flex;
     flex-direction: row-reverse;
+    margin-left: 3%;
+    margin-top: 5%;
     align-items: center;
     justify-content: center;
 
@@ -30,9 +32,9 @@ body{
         font-size: 1.5rem;
         color: $black-color;
     }
-    .main-basic img {
-        height: 400px;
-        width: 400px;
+    img {
+        height: 380px;
+        width: 380px;
     }
 }
 
