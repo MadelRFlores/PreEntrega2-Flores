@@ -2,7 +2,10 @@ body{
     background-color: $beige-color;
 }
 /*Cuerpo pagina principal arriba*/
-
+.section-main-up{
+    display: flex;
+    flex-direction: column;
+}
 .main-basic {
     display: flex;
     flex-direction: row-reverse;
@@ -44,9 +47,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    justify-self: center;
     gap: 50px;
     margin-bottom: 8%;
-    margin-left: 28%;
     margin-top: 10px;
     padding: 25px;
     width: fit-content;
@@ -86,14 +89,14 @@ body{
     grid-template-areas:
       'area2 area1'
       'area3 area1';
-  & img{
+  img{
     width: 436px;
     height: 436px;
     grid-area: area1;
     justify-self: end;
     padding-right: 5%;
   }
-  .main-aritos-text{
+  .main-text{
     grid-area: area2;
     color: $black-color;
     font-family: "Playpen Sans", cursive;
@@ -101,16 +104,14 @@ body{
     align-self: end;
     justify-self: end;
  }
-}
-.main-aritos-link{
+ .main-products-link{
     grid-area: area3;
     color: $black-color;
     align-self: start;
     justify-self: center;
     font-size: 30px;
+ }
 }
- 
-
 
 /*LLAVEROS*/
 .main-llaveros{
@@ -124,14 +125,15 @@ body{
     grid-template-areas:
       'area1 area2'
       'area1 area3';
-    & img{
+
+    img{
         width: 436px;
         height: 436px;
         grid-area: area1;
         justify-self: start;
         padding-right: 5%;
- }
-    .main-llaveros-text{
+  }
+    .main-text{
         grid-area: area2;
         color: $black-color;
         font-family: "Playpen Sans", cursive;
@@ -140,16 +142,14 @@ body{
         justify-self: start;
 
     }
+    .main-products-link{
+        grid-area: area3;
+        color: $black-color;
+        align-self: start;
+        justify-self: center;
+        font-size: 30px;
+    }
 }
-.main-llaveros-link{
-    grid-area: area3;
-    color: $black-color;
-    align-self: start;
-    justify-self: center;
-    font-size: 30px;
-}
-
-
 
 /*COLLARES*/
 .main-collares{
@@ -162,29 +162,30 @@ body{
     grid-template-rows: 1fr, 1fr;
     grid-template-areas:
       'area2 area1'
-      'area3 area1'
+      'area3 area1';
+
+    img{
+        width: 436px;
+        height: 436px;
+        object-fit: cover;
+        grid-area: area1;
+        justify-self: end;
+        padding-right: 5%;
+        padding-left: 2%;
+    }
+    .main-text{
+        grid-area: area2;
+        font-family: "Playpen Sans", cursive;
+        font-size: 35px;
+        align-self: end;
+        justify-self: end;
+    }
+    .main-products-link{
+        grid-area: area3;
+        align-self: start;
+        justify-self: center;
+        font-size: 30px;
+        color: $black-color;
+    }
 }
 
-.main-collares img{
-    width: 436px;
-    height: 436px;
-    object-fit: cover;
-    grid-area: area1;
-    justify-self: end;
-    padding-right: 5%;
-    padding-left: 2%;
-}
-.main-collares-text{
-    grid-area: area2;
-    font-family: "Playpen Sans", cursive;
-    font-size: 35px;
-    align-self: end;
-    justify-self: end;
-}
-.main-collares-link{
-    grid-area: area3;
-    align-self: start;
-    justify-self: center;
-    font-size: 30px;
-    color: $black-color;
-}

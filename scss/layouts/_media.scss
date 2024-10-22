@@ -1,7 +1,7 @@
 
 @media (max-width: 860px) {
 
-    /*header, preguntar como hacer un dropdown*/
+    /*header*/
     header {
         height: fit-content;
         .header-ul {
@@ -16,7 +16,6 @@
         }
     }
 
-    /*fin header chiquito*/
     /*footer chiquito*/
     footer {
         height: fit-content;
@@ -32,12 +31,10 @@
     }
 
     /*pagina principal*/
-    
     .main-basic-left{
         width: 100%;
         text-align: center;
     }
-
     .main-basic {
         font-size: small;
         flex-direction: column;
@@ -45,33 +42,42 @@
         align-items: center;
         justify-content: center;
         padding-bottom: 30px;
+        margin-top: 0;
         img{
             width: 60%;
             height: 60%;
-            padding-top: 10px;
+        }
+        .main-title{
+            font-size: 30px;
+            padding: 10px;
         }
         p {
             width: 100%;
             font-size: 18px;
+            margin-bottom: 20px;
         }
     }
-    .main-redes h2 {
+    .main-redes{
+        h2 {
         font-size: 18px;
-    }
-    
+        }
+    } 
     .main-products{
         img{
             width: 100%;
             height: 100%;
             object-fit: contain;
         }
+        .main-text{
+            font-size: 22px;
+        }
+        .main-products-link{
+            font-size: 20px;
+        }
     }
-
-    /*no more pagina principal*/
 
 
     /*pagina llaveros :D*/
-
     .llaveros-texto{
         padding-left: 0%; 
         padding-right: 0%;
@@ -96,7 +102,6 @@
             justify-self: center;
         }
     }
-    
     .mochileros-text{
         font-size: 16px;
         width: 100%;
@@ -107,8 +112,6 @@
             font-size: 23px;
         }
     }
-
-    /*fin pagina llaveros*/ 
 
     /*pagina collares*/
     .collares-discos{
@@ -122,7 +125,6 @@
         justify-items: center;
         padding: 10px;
         gap: 8px;
-
         p{
             width: 100%;
             padding: 0;
@@ -133,4 +135,32 @@
             object-fit: cover;
         }
     }
+    .collares-dijes{
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: repeat(4, 1fr);
+      grid-area:
+      "area1 area2"
+      "area3 area4"
+      "area5 area6"
+      "area7 area8";
+    }
+    .collar-dragon{
+      width: 90%;
+      height: 100%;
+      align-items: center;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        align-self: start;
+      }
+      h2{
+        font-size: 20px;
+      }
+      h3{
+        font-size: 18px;
+      }
+    }
+       
 }
