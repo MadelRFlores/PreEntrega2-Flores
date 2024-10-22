@@ -1,49 +1,10 @@
-.info-general{
-    background-color: $green-color;
-    margin: 40px;
-}
-.info-general h2{
-    font-family: "Playpen Sans", cursive;
-    font-size: 24px;
-    color: $white-color;
-}
-.info-general p{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 18px;
-    color: $white-color;
-}
-
 .information{
     display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
+    flex-direction: row;
+    flex-wrap:wrap;
+    gap: 20px;
 }
-
 .info-quienes{
-    @extend .info-repeat;
-}
-.info-feria{
-    @extend .info-repeat;
-    & a svg{
-        width: 50px;
-        height: 50px;
-        color: $white-color;
-        transition: 0.5s;
-        &:hover{
-            transform:scale(1.2)
-        }
-    }
-}
-.info-collares{
-    @extend .info-repeat;
-}
-.info-crochet{
-    @extend .info-repeat;
-}
-.info-druid{
-    @extend .info-repeat;
-}
-.info-dnd{
-    @extend .info-repeat;
+    background-color: $green-color;
+    font-family: "Playpen Sans", cursive;
 }

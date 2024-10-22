@@ -5,12 +5,17 @@ body{
 .section-main-up{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 90vh;
+    max-height: 100%;
 }
 .main-basic {
     display: flex;
     flex-direction: row-reverse;
     margin-left: 3%;
-    margin-top: 5%;
+    margin-top: 3%;
     align-items: center;
     justify-content: center;
 
@@ -47,7 +52,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    justify-self: center;
     gap: 50px;
     margin-bottom: 8%;
     margin-top: 10px;
@@ -57,6 +61,8 @@ body{
     border-color: $black-color;
     border-style: groove;
     color: $white-color;
+    position: absolute;
+    bottom: -20% ;
 
     .main-redes h2 {
         font-size: x-large;
@@ -78,34 +84,41 @@ body{
 
 /* pagina principal productos*/
 /*ARITOS*/
-.main-aritos{
+.section-main-products{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-tarjetita{
     background-color: $green-color;
-    border-radius: 3%;
-    display: grid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     padding: 30px;
     margin-bottom: 30px;
-    grid-template-columns: 60%, 40%;
-    grid-template-rows: 1fr, 1fr;
-    grid-template-areas:
-      'area2 area1'
-      'area3 area1';
-  img{
-    width: 436px;
-    height: 436px;
-    grid-area: area1;
+  & img{
+    max-width: 436px;
+    width: 100%;
+    max-height: 436px;
+    height: 100%;
     justify-self: end;
-    padding-right: 5%;
+    border-radius: 10px;
   }
   .main-text{
-    grid-area: area2;
     color: $black-color;
     font-family: "Playpen Sans", cursive;
     font-size: 35px;
     align-self: end;
     justify-self: end;
+    max-width: 400px;
  }
  .main-products-link{
-    grid-area: area3;
     color: $black-color;
     align-self: start;
     justify-self: center;
@@ -113,79 +126,5 @@ body{
  }
 }
 
-/*LLAVEROS*/
-.main-llaveros{
-    background-color: $green-color;
-    border-radius: 3%;
-    display: grid; 
-    padding: 30px;
-    margin-bottom: 30px;
-    grid-template-columns: 40%, 60%;
-    grid-template-rows: 1fr, 1fr;
-    grid-template-areas:
-      'area1 area2'
-      'area1 area3';
 
-    img{
-        width: 436px;
-        height: 436px;
-        grid-area: area1;
-        justify-self: start;
-        padding-right: 5%;
-  }
-    .main-text{
-        grid-area: area2;
-        color: $black-color;
-        font-family: "Playpen Sans", cursive;
-        font-size: 35px;
-        align-self: end;
-        justify-self: start;
-
-    }
-    .main-products-link{
-        grid-area: area3;
-        color: $black-color;
-        align-self: start;
-        justify-self: center;
-        font-size: 30px;
-    }
-}
-
-/*COLLARES*/
-.main-collares{
-    background-color: $green-color;
-    border-radius: 3%;
-    display: grid;
-    padding: 30px;
-    margin-bottom: 30px;
-    grid-template-columns: 60%, 40%;
-    grid-template-rows: 1fr, 1fr;
-    grid-template-areas:
-      'area2 area1'
-      'area3 area1';
-
-    img{
-        width: 436px;
-        height: 436px;
-        object-fit: cover;
-        grid-area: area1;
-        justify-self: end;
-        padding-right: 5%;
-        padding-left: 2%;
-    }
-    .main-text{
-        grid-area: area2;
-        font-family: "Playpen Sans", cursive;
-        font-size: 35px;
-        align-self: end;
-        justify-self: end;
-    }
-    .main-products-link{
-        grid-area: area3;
-        align-self: start;
-        justify-self: center;
-        font-size: 30px;
-        color: $black-color;
-    }
-}
 

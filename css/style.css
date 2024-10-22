@@ -27,7 +27,7 @@ p {
 }
 
 /*pagina info*/
-.info-repeat, .info-dnd, .info-druid, .info-crochet, .info-collares, .info-feria, .info-quienes {
+.info-repeat, .info-feria {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -313,28 +313,25 @@ header {
   border-radius: 5%;
 }
 
-.info-general {
-  background-color: #8B9E61;
-  margin: 40px;
-}
-
-.info-general h2 {
-  font-family: "Playpen Sans", cursive;
-  font-size: 24px;
-  color: #f9fedc;
-}
-
-.info-general p {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 18px;
-  color: #f9fedc;
-}
-
 .information {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
+}
+
+.info-div {
+  margin: 40px;
+}
+.info-div h2 {
+  font-family: "Playpen Sans", cursive;
+  font-size: 24px;
+  color: #f9fedc;
+}
+.info-div p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  color: #f9fedc;
 }
 
 .info-feria a svg {
@@ -355,13 +352,18 @@ body {
 .section-main-up {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 90vh;
+  max-height: 100%;
 }
 
 .main-basic {
   display: flex;
   flex-direction: row-reverse;
   margin-left: 3%;
-  margin-top: 5%;
+  margin-top: 3%;
   align-items: center;
   justify-content: center;
 }
@@ -396,7 +398,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  justify-self: center;
   gap: 50px;
   margin-bottom: 8%;
   margin-top: 10px;
@@ -406,6 +407,8 @@ body {
   border-color: #1d1212;
   border-style: groove;
   color: #f9fedc;
+  position: absolute;
+  bottom: -20%;
 }
 .main-redes .main-redes h2 {
   font-size: x-large;
@@ -426,106 +429,46 @@ body {
 
 /* pagina principal productos*/
 /*ARITOS*/
-.main-aritos {
-  background-color: #8B9E61;
-  border-radius: 3%;
-  display: grid;
-  padding: 30px;
-  margin-bottom: 30px;
-  grid-template-columns: 60%, 40%;
-  grid-template-rows: 1fr, 1fr;
-  grid-template-areas: "area2 area1" "area3 area1";
-}
-.main-aritos img {
-  width: 436px;
-  height: 436px;
-  grid-area: area1;
-  justify-self: end;
-  padding-right: 5%;
-}
-.main-aritos .main-text {
-  grid-area: area2;
-  color: #1d1212;
-  font-family: "Playpen Sans", cursive;
-  font-size: 35px;
-  align-self: end;
-  justify-self: end;
-}
-.main-aritos .main-products-link {
-  grid-area: area3;
-  color: #1d1212;
-  align-self: start;
-  justify-self: center;
-  font-size: 30px;
+.section-main-products {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-/*LLAVEROS*/
-.main-llaveros {
+.main-tarjetita {
   background-color: #8B9E61;
-  border-radius: 3%;
-  display: grid;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
   padding: 30px;
   margin-bottom: 30px;
-  grid-template-columns: 40%, 60%;
-  grid-template-rows: 1fr, 1fr;
-  grid-template-areas: "area1 area2" "area1 area3";
 }
-.main-llaveros img {
-  width: 436px;
-  height: 436px;
-  grid-area: area1;
-  justify-self: start;
-  padding-right: 5%;
+.main-tarjetita img {
+  max-width: 436px;
+  width: 100%;
+  max-height: 436px;
+  height: 100%;
+  justify-self: end;
+  border-radius: 10px;
 }
-.main-llaveros .main-text {
-  grid-area: area2;
+.main-tarjetita .main-text {
   color: #1d1212;
   font-family: "Playpen Sans", cursive;
   font-size: 35px;
   align-self: end;
-  justify-self: start;
+  justify-self: end;
+  max-width: 400px;
 }
-.main-llaveros .main-products-link {
-  grid-area: area3;
+.main-tarjetita .main-products-link {
   color: #1d1212;
   align-self: start;
   justify-self: center;
   font-size: 30px;
-}
-
-/*COLLARES*/
-.main-collares {
-  background-color: #8B9E61;
-  border-radius: 3%;
-  display: grid;
-  padding: 30px;
-  margin-bottom: 30px;
-  grid-template-columns: 60%, 40%;
-  grid-template-rows: 1fr, 1fr;
-  grid-template-areas: "area2 area1" "area3 area1";
-}
-.main-collares img {
-  width: 436px;
-  height: 436px;
-  object-fit: cover;
-  grid-area: area1;
-  justify-self: end;
-  padding-right: 5%;
-  padding-left: 2%;
-}
-.main-collares .main-text {
-  grid-area: area2;
-  font-family: "Playpen Sans", cursive;
-  font-size: 35px;
-  align-self: end;
-  justify-self: end;
-}
-.main-collares .main-products-link {
-  grid-area: area3;
-  align-self: start;
-  justify-self: center;
-  font-size: 30px;
-  color: #1d1212;
 }
 
 /*LLAVEROS*/
@@ -792,15 +735,16 @@ body {
   .main-redes h2 {
     font-size: 18px;
   }
-  .main-products img {
-    width: 100%;
-    height: 100%;
+  .main-tarjetita img {
+    width: 70%;
+    height: 70%;
     object-fit: contain;
+    border-radius: 10px;
   }
-  .main-products .main-text {
+  .main-tarjetita .main-text {
     font-size: 22px;
   }
-  .main-products .main-products-link {
+  .main-tarjetita .main-products-link {
     font-size: 20px;
   }
   /*pagina llaveros :D*/
