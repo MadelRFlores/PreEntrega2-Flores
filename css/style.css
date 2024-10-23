@@ -11,35 +11,46 @@ p {
 }
 
 /*colorcitos*/
-/*header todo bonito*/
 header {
-  background-color: #334f57;
-  width: 100%;
-  height: min-content;
+  background: #334f57;
   text-align: center;
-  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
-
-.header-ul {
+nav {
+  height: 80px;
+  padding: 20px;
   width: 100%;
   display: flex;
-  padding-top: 0.5rem;
-  gap: 5%;
-  list-style-type: none;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
-.header-link {
+.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 10px;
+}
+
+.nav-link {
   color: #f9fedc;
   text-decoration: none;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 22px;
-  transition: 0.8s;
+  font-size: 1.4rem;
+  padding: 10px;
+  transition: 0.5s;
+  border: 1px solid transparent;
 }
 
-.header-link:hover {
-  font-size: 20px;
+.nav-link:hover {
+  border: 1px solid #f9fedc;
+  border-radius: 10px;
+}
+
+.nav-list:hover .nav-link:not(:hover) {
+  filter: blur(4px);
 }
 
 /*footer general*/
@@ -60,6 +71,7 @@ header {
   list-style-type: none;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .footer-ul p {
@@ -306,7 +318,7 @@ header {
   height: 100%;
   background-color: #8B9E61;
   padding: 15px;
-  border-color: rgba(29, 18, 18, 0.8196078431);
+  border-color: #1d1212;
   border-style: double;
   border-radius: 2%;
   color: #f9fedc;
@@ -814,8 +826,8 @@ body {
   .collar-card img {
     max-width: 288px;
     max-height: 288px;
-    min-width: 140px;
-    min-height: 200px;
+    min-width: 120px;
+    min-height: 180px;
     width: 100%;
     height: 100%;
   }
@@ -863,6 +875,141 @@ body {
   }
   .aritos-card h4 {
     font-size: 16spx;
+  }
+}
+@media (max-width: 550px) {
+  .footer-link {
+    padding-left: 0;
+  }
+  .collares-discos {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "area1 area2" "area5 area6" "area3 area4";
+  }
+  .collares-discos img {
+    max-height: 240px;
+    max-width: 145px;
+  }
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+}
+
+.nav-link {
+  color: #f9fedc;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+.menu-hamburguesa {
+  display: none;
+}
+
+.drawer {
+  position: fixed;
+  top: 0;
+  right: -650px;
+  width: 250px;
+  height: 100%;
+  background-color: #334f57;
+  color: #f9fedc;
+  overflow-y: auto;
+  transition: 0.5s ease all;
+  z-index: 1000;
+}
+.drawer .drawer-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+.drawer .drawer-header button {
+  background: none;
+  border: none;
+  color: #f9fedc;
+  font-size: 30px;
+  cursor: pointer;
+}
+.drawer ul {
+  list-style: none;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 900;
+}
+
+.drawer-open {
+  right: 0;
+}
+
+.overlay-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (max-width: 760px) {
+  .navbar {
+    display: none;
+  }
+  .menu-hamburguesa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 20px;
+  }
+  .menu-hamburguesa .menu-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    transition: 0.5s;
+  }
+  .menu-hamburguesa .menu-icon:hover span:nth-child(2), .menu-hamburguesa .menu-icon:hover span:nth-child(3) {
+    width: 40px;
+  }
+  .menu-hamburguesa .menu-icon span {
+    display: block;
+    height: 3px;
+    width: 40px;
+    background-color: #f9fedc;
+    transition: 0.5s;
+  }
+  .menu-hamburguesa .menu-icon span:nth-child(2) {
+    width: 30px;
+    transition: 0.3s;
+  }
+  .menu-hamburguesa .menu-icon span:nth-child(3) {
+    width: 20px;
+    transition: 0.4s;
+  }
+  .drawer {
+    display: block;
+  }
+  .overlay {
+    display: block;
   }
 }
 

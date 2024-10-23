@@ -7,18 +7,39 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header>
-        <nav>  
-            <ul class="header-ul"> 
-             <li class="left">
-              <a href="../index.html"class="header-link">Inicio</a></li>
-             <li><a href="collares.html"class="header-link">Collares</a></li>
-             <li><a href="aritos.html"class="header-link" >Aritos</a></li>
-             <li><a href="llaveros.html"class="header-link">Llaveros</a></li>
-             <li><a href="info.html" class="header-link">Sobre DruidWire</a></li>
-            </ul>
-        </nav>       
-    </header>
+  <header>
+    <div class="menu-hamburguesa" id="menu-hamburguesa">
+        <a href="index.html" class="nav-link">DruidWire</a>
+      <div class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <nav class="navbar" id="navbar">
+      <a href="index.html" class="nav-link"> DruidWire </a>
+      <ul>
+        <li><a href="../index.html" class="nav-link">Inicio</a></li>
+        <li><a href="collares.html" class="nav-link">Collares</a></li>
+        <li><a href="aritos.html" class="nav-link">Aritos</a></li>
+        <li><a href="llaveros.html" class="nav-link">Llaveros</a></li>
+        <li><a href="info.html" class="nav-link">Sobre Nosotros</a></li>
+      </ul>
+    </nav>
+    <div class="drawer" id="drawer">
+      <div class="drawer-header">
+        <button id="close-drawer">&times;</button>
+      </div>
+      <ul>
+        <li><a href="../index.html" class="nav-link">Inicio</a></li>
+        <li><a href="collares.html" class="nav-link">Collares</a></li>
+        <li><a href="aritos.html" class="nav-link">Aritos</a></li>
+        <li><a href="llaveros.html" class="nav-link">Llaveros</a></li>
+        <li><a href="info.html" class="nav-link">Sobre Nosotros</a></li>
+      </ul>
+    </div>
+    <div class="overlay" id="overlay"></div>
+  </header>
     <main>
         <section>
          <article class="aritos-titulo">
@@ -85,7 +106,7 @@
                 <li><a href="pages/collares.html" class="footer-link">Collares</a></li>
                 <li><a href="pages/aritos.html" class="footer-link">Aritos</a></li>
                 <li><a href="pages/llaveros.html" class="footer-link">Llaveros</a></li>
-                <li><a href="https://www.instagram.com/druidwire/" target="_blank" class="footer-link">Seguinos en Instagram!</a></li>
+                <li><a href="https://www.instagram.com/druidwire/" target="_blank" class="footer-link">Nuestras redes!</a></li>
               </ul>
             </article>
         </section>
