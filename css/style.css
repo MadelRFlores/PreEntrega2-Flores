@@ -26,22 +26,6 @@ p {
   align-self: center;
 }
 
-/*pagina info*/
-.info-repeat, .info-feria {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  gap: 20px;
-  width: 290px;
-  height: 360px;
-  background-color: #334f57;
-  padding: 15px;
-  border-color: rgba(29, 18, 18, 0.8196078431);
-  border-style: double;
-  border-radius: 2%;
-}
-
 /*header todo bonito*/
 header {
   background-color: #334f57;
@@ -232,6 +216,13 @@ header {
 }
 
 /*products*/
+.collares-productos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
 .collares-discos {
   background-color: #8B9E61;
   display: grid;
@@ -281,7 +272,8 @@ header {
   background-color: #D9C8B0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   width: fit-content;
   margin-top: 40px;
   margin-bottom: 40px;
@@ -296,7 +288,7 @@ header {
   align-self: center;
 }
 
-.collar-dragon, .collar-beads4, .collar-beads3, .collar-beads2, .collar-beads1, .collar-tarot, .collar-llave, .collar-piece {
+.collar-card {
   margin: 10px;
   display: flex;
   flex-direction: column;
@@ -307,40 +299,72 @@ header {
   font-family: "Playpen Sans", cursive;
   color: #1d1212;
 }
-.collar-dragon img, .collar-beads4 img, .collar-beads3 img, .collar-beads2 img, .collar-beads1 img, .collar-tarot img, .collar-llave img, .collar-piece img {
+.collar-card img {
   width: 18rem;
   height: 18rem;
   border-radius: 5%;
 }
 
 .information {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-area: "area1 area2 area3" "area4 area5 area6";
   gap: 30px;
+  padding: 60px;
+  align-items: center;
   justify-content: center;
 }
-
-.info-div {
-  margin: 40px;
+.information .area6 {
+  grid-area: area1;
 }
-.info-div h2 {
-  font-family: "Playpen Sans", cursive;
-  font-size: 24px;
+.information .area2 {
+  grid-area: area2;
+}
+.information .area3 {
+  grid-area: area3;
+}
+.information .area4 {
+  grid-area: area4;
+}
+.information .area5 {
+  grid-area: area5;
+}
+.information .area6 {
+  grid-area: area6;
+}
+
+.info-tarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  max-width: 290px;
+  max-height: 380px;
+  height: 100%;
+  background-color: #8B9E61;
+  padding: 15px;
+  border-color: rgba(29, 18, 18, 0.8196078431);
+  border-style: double;
+  border-radius: 2%;
   color: #f9fedc;
 }
-.info-div p {
+.info-tarjeta h2 {
+  font-family: "Playpen Sans", cursive;
+  font-size: 26px;
+}
+.info-tarjeta p {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 18px;
-  color: #f9fedc;
 }
-
-.info-feria a svg {
-  width: 50px;
-  height: 50px;
+.info-tarjeta a svg {
+  width: 40px;
+  height: 40px;
   color: #f9fedc;
   transition: 0.5s;
 }
-.info-feria a svg:hover {
+.info-tarjeta a svg:hover {
   transform: scale(1.2);
 }
 
@@ -353,7 +377,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   position: relative;
   min-height: 90vh;
   max-height: 100%;
@@ -393,7 +417,7 @@ body {
   width: 380px;
 }
 
-/*cuerpo pagina principal abajito(?)*/
+/*cuerpo pagina principal abajo*/
 .main-redes {
   display: flex;
   align-items: center;
@@ -408,7 +432,7 @@ body {
   border-style: groove;
   color: #f9fedc;
   position: absolute;
-  bottom: -20%;
+  bottom: -25%;
 }
 .main-redes .main-redes h2 {
   font-size: x-large;
@@ -677,6 +701,14 @@ body {
   color: #f9fedc;
 }
 
+@media (max-width: 960px) {
+  .info-tarjeta h2 {
+    font-size: 22px;
+  }
+  .info-tarjeta p {
+    font-size: 17px;
+  }
+}
 @media (max-width: 860px) {
   /*header*/
   header {
@@ -718,6 +750,7 @@ body {
     justify-content: center;
     padding-bottom: 30px;
     margin-top: 0;
+    margin-bottom: 5%;
   }
   .main-basic img {
     width: 60%;
@@ -731,6 +764,9 @@ body {
     width: 100%;
     font-size: 18px;
     margin-bottom: 20px;
+  }
+  .main-redes {
+    bottom: -18%;
   }
   .main-redes h2 {
     font-size: 18px;
@@ -808,22 +844,40 @@ body {
     grid-template-rows: repeat(4, 1fr);
     grid-area: "area1 area2" "area3 area4" "area5 area6" "area7 area8";
   }
-  .collar-dragon, .collar-piece, .collar-llave, .collar-tarot, .collar-beads1, .collar-beads2, .collar-beads3, .collar-beads4 {
+  .collar-card {
     width: 90%;
     height: 100%;
     align-items: center;
+    justify-content: center;
   }
-  .collar-dragon img, .collar-piece img, .collar-llave img, .collar-tarot img, .collar-beads1 img, .collar-beads2 img, .collar-beads3 img, .collar-beads4 img {
+  .collar-card img {
+    max-width: 288px;
+    max-height: 288px;
+    min-width: 140px;
+    min-height: 200px;
     width: 100%;
     height: 100%;
-    object-fit: contain;
-    align-self: start;
   }
-  .collar-dragon h2, .collar-piece h2, .collar-llave h2, .collar-tarot h2, .collar-beads1 h2, .collar-beads2 h2, .collar-beads3 h2, .collar-beads4 h2 {
+  .collar-card h2 {
     font-size: 20px;
   }
-  .collar-dragon h3, .collar-piece h3, .collar-llave h3, .collar-tarot h3, .collar-beads1 h3, .collar-beads2 h3, .collar-beads3 h3, .collar-beads4 h3 {
+  .collar-card h3 {
     font-size: 18px;
+  }
+  /*pagina info*/
+  .information {
+    gap: 20px;
+    padding: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-area: "area1 area2" "area3 area4" "area5 area6";
+    justify-items: center;
+  }
+  .info-tarjeta h2 {
+    font-size: 20px;
+  }
+  .info-tarjeta p {
+    font-size: 16px;
   }
 }
 

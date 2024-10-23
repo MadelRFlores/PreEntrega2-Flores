@@ -1,4 +1,14 @@
 
+@media (max-width: 960px) {
+    .info-tarjeta{
+        h2{
+            font-size: 22px;
+        }
+        p{
+            font-size: 17px;
+        }
+    }
+}
 @media (max-width: 860px) {
 
     /*header*/
@@ -43,6 +53,7 @@
         justify-content: center;
         padding-bottom: 30px;
         margin-top: 0;
+        margin-bottom: 5%;
         img{
             width: 60%;
             height: 60%;
@@ -58,6 +69,7 @@
         }
     }
     .main-redes{
+        bottom: -18%;
         h2 {
         font-size: 18px;
         }
@@ -146,15 +158,18 @@
       "area5 area6"
       "area7 area8";
     }
-    .collar-dragon{
+    .collar-card{
       width: 90%;
       height: 100%;
       align-items: center;
+      justify-content: center;
       img{
+        max-width:288px ;
+        max-height: 288px;
+        min-width: 140px;
+        min-height: 200px;
         width: 100%;
         height: 100%;
-        object-fit: contain;
-        align-self: start;
       }
       h2{
         font-size: 20px;
@@ -164,4 +179,24 @@
       }
     }
        
+    /*pagina info*/
+    .information{
+        gap: 20px;
+        padding: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-area: 
+        "area1 area2"
+        "area3 area4"
+        "area5 area6";
+        justify-items: center;
+    }
+    .info-tarjeta{
+        h2{
+            font-size: 20px;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
 }

@@ -18,6 +18,13 @@
 }   
  
 /*products*/
+.collares-productos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
 .collares-discos{
     background-color: $green-color;
     display: grid;
@@ -64,7 +71,8 @@
     background-color: $beige-color;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     width: fit-content;
     margin-top: 40px;
     margin-bottom: 40px;
@@ -79,7 +87,7 @@
     }
 }
 
-.collar-dragon{
+.collar-card{
     margin: 10px;
     display: flex;
     flex-direction: column;
@@ -95,25 +103,4 @@
         border-radius: 5%;
     }    
 
-}
-.collar-piece{
-    @extend .collar-dragon;
-}
-.collar-llave{
-    @extend .collar-dragon;
-}
-.collar-tarot{
-    @extend .collar-dragon;
-}
-.collar-beads1{
-    @extend .collar-dragon;
-}
-.collar-beads2{
-    @extend .collar-dragon;
-}
-.collar-beads3{
-    @extend .collar-dragon;
-}
-.collar-beads4{
-    @extend .collar-dragon;
 }
