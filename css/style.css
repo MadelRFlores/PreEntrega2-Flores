@@ -11,21 +11,6 @@ p {
 }
 
 /*colorcitos*/
-/*pagina aritos*/
-.subtitle-h3, .thesun h3, .trex h3, .hachas h3, .cruces h3, .veneno h3, .eclipse h3, .reliquias-kuromis h3, .chanchito h3, .carta-flores h3 {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: #1d1212;
-  font-size: 24px;
-  align-self: center;
-}
-
-.subtitle-h4, .thesun h4, .trex h4, .hachas h4, .cruces h4, .veneno h4, .eclipse h4, .reliquias-kuromis h4, .chanchito h4, .carta-flores h4 {
-  font-family: "Playpen Sans", cursive;
-  font-size: 14px;
-  color: #1d1212;
-  align-self: center;
-}
-
 /*header todo bonito*/
 header {
   background-color: #334f57;
@@ -122,80 +107,56 @@ header {
   grid-template-areas: "area1 area2 area3" "area4 area5 area6" "area7 area8 area9";
   gap: 40px;
   margin: 4%;
+  justify-content: center;
+}
+.aritos-products .carta-flores {
+  grid-area: area1;
+}
+.aritos-products .chanchito {
+  grid-area: area2;
+}
+.aritos-products .reliquias-kuromis {
+  grid-area: area3;
+}
+.aritos-products .eclipse {
+  grid-area: area4;
+}
+.aritos-products .veneno {
+  grid-area: area5;
+}
+.aritos-products .cruces {
+  grid-area: area6;
+}
+.aritos-products .hachas {
+  grid-area: area7;
+}
+.aritos-products .trex {
+  grid-area: area8;
+}
+.aritos-products .thesun {
+  grid-area: area9;
 }
 
-.carta-flores {
-  grid-area: area1;
+.aritos-card {
   background-color: #8B9E61;
   display: flex;
   flex-direction: column;
   padding: 10px;
   gap: 5px;
 }
-.chanchito {
-  grid-area: area2;
-  background-color: #8B9E61;
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  gap: 5px;
+.aritos-card h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #1d1212;
+  font-size: 24px;
+  align-self: center;
 }
-.reliquias-kuromis {
-  grid-area: area3;
-  background-color: #8B9E61;
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  gap: 5px;
+.aritos-card h4 {
+  font-family: "Playpen Sans", cursive;
+  font-size: 14px;
+  color: #1d1212;
+  align-self: center;
 }
-.eclipse {
-  grid-area: area4;
-  background-color: #8B9E61;
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  gap: 5px;
-}
-.veneno {
-  grid-area: area5;
-  background-color: #8B9E61;
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  gap: 5px;
-}
-.cruces {
-  grid-area: area6;
-  background-color: #8B9E61;
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  gap: 5px;
-}
-.hachas {
-  grid-area: area7;
-  background-color: #8B9E61;
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  gap: 5px;
-}
-.trex {
-  grid-area: area8;
-  background-color: #8B9E61;
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  gap: 5px;
-}
-.thesun {
-  grid-area: area9;
-  background-color: #8B9E61;
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  gap: 5px;
-}
+
 /*titulo*/
 .collares-titulo {
   width: 100%;
@@ -878,6 +839,30 @@ body {
   }
   .info-tarjeta p {
     font-size: 16px;
+  }
+  /*pagina aritos*/
+  .aritos-products {
+    grid-template-columns: repeat(2, 40%);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "area1 area2" "area3 area4" "area5 area6" "area7 area8" "area9 none";
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .aritos-card {
+    min-width: 160px;
+    min-height: 241px;
+    height: 100%;
+  }
+  .aritos-card img {
+    min-width: 140px;
+    min-height: 140px;
+  }
+  .aritos-card h3 {
+    font-size: 18px;
+  }
+  .aritos-card h4 {
+    font-size: 16spx;
   }
 }
 

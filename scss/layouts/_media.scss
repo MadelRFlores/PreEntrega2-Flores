@@ -9,8 +9,7 @@
         }
     }
 }
-@media (max-width: 860px) {
-
+@media (max-width: 860px){
     /*header*/
     header {
         height: fit-content;
@@ -25,7 +24,6 @@
             font-size: 15px;
         }
     }
-
     /*footer chiquito*/
     footer {
         height: fit-content;
@@ -39,7 +37,6 @@
             font-size: 12px;
         }
     }
-
     /*pagina principal*/
     .main-basic-left{
         width: 100%;
@@ -88,8 +85,6 @@
             font-size: 20px;
         }
     }
-
-
     /*pagina llaveros :D*/
     .llaveros-texto{
         padding-left: 0%; 
@@ -125,7 +120,6 @@
             font-size: 23px;
         }
     }
-
     /*pagina collares*/
     .collares-discos{
         display: grid;
@@ -178,7 +172,6 @@
         font-size: 18px;
       }
     }
-       
     /*pagina info*/
     .information{
         gap: 20px;
@@ -199,4 +192,36 @@
             font-size: 16px;
         }
     }
+    /*pagina aritos*/
+    .aritos-products{
+     grid-template-columns: repeat(2, 40%);
+     grid-template-rows: repeat(5, 1fr);
+     grid-template-areas: 
+     "area1 area2"
+     "area3 area4"
+     "area5 area6"
+     "area7 area8"
+     "area9 none";
+     gap: 20px;
+     justify-content: center;
+     align-items: center;
+    }
+    .aritos-card{
+        min-width: 160px;
+        min-height: 241px;
+        height: 100%;
+        img{
+            min-width: 140px;
+            min-height: 140px;
+        }
+        h3{
+         font-size: 18px;
+        }
+        h4{
+            font-size: 16spx;
+        }
+    }
 }
+
+
+

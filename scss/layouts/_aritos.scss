@@ -34,148 +34,51 @@
      'area7 area8 area9';
     gap: 40px;
     margin: 4%;
+    justify-content: center;
+    .carta-flores{
+        grid-area: area1;
+    }
+    .chanchito{
+        grid-area: area2;
+    }
+    .reliquias-kuromis{
+        grid-area: area3;
+    }
+    .eclipse{
+        grid-area: area4;
+    }
+    .veneno{
+        grid-area: area5;
+    }
+    .cruces{
+        grid-area: area6;
+    }
+    .hachas{
+        grid-area: area7;
+    }
+    .trex{
+        grid-area: area8;
+    }
+    .thesun{
+        grid-area: area9;
+    }
 }
-
-
-.carta-flores{
-    grid-area: area1;
+.aritos-card{
     background-color: $green-color;
     display: flex;
     flex-direction: column;
     padding: 10px;
     gap: 5px;
-
-    h3{
-        @extend .subtitle-h3;
-    }
-    h4{
-        @extend .subtitle-h4;
-    }
-}
-
-.chanchito{
-    grid-area: area2;
-    background-color: $green-color;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    gap: 5px;
-
-    h3{
-        @extend .subtitle-h3;
-    }
-    h4{
-        @extend .subtitle-h4;
-    }
-}
-
-.reliquias-kuromis{
-    grid-area: area3;
-    background-color: $green-color;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    gap: 5px;
-
-    h3{
-        @extend .subtitle-h3;
-    }
-    h4{
-        @extend .subtitle-h4;
-    }
-}
-
-.eclipse{
-    grid-area: area4;
-    background-color: $green-color;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    gap: 5px;
-    h3{
-        @extend .subtitle-h3;
-    }
-    h4{
-        @extend .subtitle-h4;
-    }
-}
-
-
-.veneno{
-    grid-area: area5;
-    background-color: $green-color;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    gap: 5px;
-    h3{
-        @extend .subtitle-h3;
-    }
-    h4{
-        @extend .subtitle-h4;
-    }
-}
-
-.cruces{
-    grid-area: area6;
-    background-color: $green-color;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    gap: 5px;
-
-    h3{
-        @extend .subtitle-h3;
-    }
-    h4{
-        @extend .subtitle-h4;
-    }
-}
-
-.hachas{
-    grid-area: area7;
-    background-color: $green-color;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    gap: 5px;
-
-    h3{
-        @extend .subtitle-h3;
-    }
-    h4{
-        @extend .subtitle-h4;
-    }
-}
-
-.trex{
-    grid-area: area8;
-    background-color: $green-color;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    gap: 5px;
-
-    h3{
-        @extend .subtitle-h3;
-    }
-    h4{
-        @extend .subtitle-h4;
-    }
-}
-
-.thesun{
-    grid-area: area9;
-    background-color: $green-color;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    gap: 5px;
-
-    h3{
-        @extend .subtitle-h3;
-    }
-    h4{
-        @extend .subtitle-h4;
-    }
+  h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: $black-color;
+    font-size: 24px;
+    align-self: center;
+  }
+   h4 {
+    font-family: "Playpen Sans", cursive;
+    font-size: 14px;
+    color: $black-color;
+    align-self: center;
+   }
 }
