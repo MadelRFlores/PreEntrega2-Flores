@@ -5,8 +5,10 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
     padding: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-bottom: 30px;
     gap: 15px;
 
@@ -61,6 +63,7 @@
     }
     .thesun{
         grid-area: area9;
+        justify-self: center;
     }
 }
 .aritos-card{

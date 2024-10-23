@@ -18,6 +18,7 @@ header {
   top: 0;
   z-index: 2;
 }
+
 nav {
   height: 80px;
   padding: 20px;
@@ -45,8 +46,7 @@ nav {
 }
 
 .nav-link:hover {
-  border: 1px solid #f9fedc;
-  border-radius: 10px;
+  font-size: 1.5rem;
 }
 
 .nav-list:hover .nav-link:not(:hover) {
@@ -95,8 +95,10 @@ nav {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
   padding: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-bottom: 30px;
   gap: 15px;
 }
@@ -147,6 +149,7 @@ nav {
 }
 .aritos-products .thesun {
   grid-area: area9;
+  justify-self: center;
 }
 
 .aritos-card {
@@ -178,8 +181,6 @@ nav {
   background-color: #D9C8B0;
   margin-top: 10px;
   margin-bottom: 20px;
-  border-color: #334f57;
-  border-style: ridge;
 }
 .collares-titulo h1 {
   color: #1d1212;
@@ -200,7 +201,7 @@ nav {
   background-color: #8B9E61;
   display: grid;
   grid-template-columns: repeat(4, 25%);
-  grid-template-rows: 1fr, 1fr;
+  grid-template-rows: 1fr 8rem;
   grid-template-areas: "area1 area2 area3 area4" "area6 area6 area5 area5";
   align-items: center;
   justify-items: center;
@@ -231,13 +232,15 @@ nav {
 .collar-disc-5 {
   grid-area: area5;
   color: #1d1212;
-  width: 80%;
+  width: 100%;
   padding: 30px;
+  font-family: "Playpen Sans", cursive;
 }
 
 .collar-disc-6 {
   grid-area: area6;
   color: #1d1212;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 /*collar products dijes*/
@@ -245,20 +248,12 @@ nav {
   background-color: #D9C8B0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  width: fit-content;
+  border-radius: 15px;
   margin-top: 40px;
   margin-bottom: 40px;
   gap: 10px;
-}
-.collares-dijes h2 {
-  font-size: 25px;
-  align-self: center;
-}
-.collares-dijes h3 {
-  font-size: 20px;
-  align-self: center;
 }
 
 .collar-card {
@@ -269,13 +264,22 @@ nav {
   border-color: #8B9E61;
   border-style: solid;
   border-radius: 5%;
-  font-family: "Playpen Sans", cursive;
   color: #1d1212;
+  align-items: center;
+  justify-content: center;
 }
 .collar-card img {
   width: 18rem;
   height: 18rem;
   border-radius: 5%;
+}
+.collar-card h2 {
+  font-size: 25px;
+  font-family: "Playpen Sans", cursive;
+}
+.collar-card h3 {
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .information {
@@ -380,7 +384,6 @@ body {
   padding-bottom: 10px;
 }
 .main-basic .main-basic-about {
-  text-decoration: none;
   font-family: "Playpen Sans", cursive;
   font-size: 1.5rem;
   color: #1d1212;
@@ -471,11 +474,12 @@ body {
 /*LLAVEROS*/
 .llaveros-texto {
   display: grid;
-  grid-template-columns: 40%, 40%;
-  grid-template-rows: 8rem, 5rem;
+  justify-content: center;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 8rem 5rem;
   grid-template-areas: "area1 area2" "area3 area4";
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
   padding-bottom: 20px;
   width: 100%;
   height: 40%;
@@ -489,7 +493,6 @@ body {
   grid-area: area1;
   align-self: end;
   justify-self: center;
-  padding: 40px;
   font-size: 3.5rem;
 }
 .llaveros-texto .llaveros-area2 {
@@ -497,7 +500,7 @@ body {
   align-self: end;
   justify-self: start;
   margin-top: 20px;
-  width: 80%;
+  width: 95%;
   font-size: 22px;
 }
 .llaveros-texto .llaveros-area3 {
@@ -506,51 +509,49 @@ body {
   justify-self: center;
   padding-top: 20px;
   font-size: 22px;
-  width: 58%;
+  width: 90%;
 }
-
-.llaveros-instagram {
+.llaveros-texto .llaveros-instagram {
   grid-area: area4;
   align-self: center;
   justify-self: start;
   padding-top: 40px;
   font-size: 22px;
 }
-.llaveros-instagram .llaveros-instagram a {
+.llaveros-texto .llaveros-instagram a {
   color: #1d1212;
   font-size: 20px;
 }
 
-/*mochileros*/
-.llaveros-mochileros, .llaveros-decorados, .llaveros-simples {
+.llaveros-card {
   background-color: #8B9E61;
   border-radius: 5px;
   display: grid;
   grid-template-columns: repeat(4, 25%);
-  grid-template-rows: 50%, 50%;
+  grid-template-rows: 70% 30%;
   grid-template-areas: "area1 area2 area3 area4" "area5 area5 area6 area6";
   gap: 10px;
   padding: 30px;
   margin: 30px;
 }
-
-.mochileros-a1 {
+.llaveros-card img {
+  width: 90%;
+  height: 90%;
+  border-radius: 2%;
+}
+.llaveros-card .card-a1 {
   grid-area: area1;
 }
-
-.mochileros-a2 {
+.llaveros-card .card-a2 {
   grid-area: area2;
 }
-
-.mochileros-a3 {
+.llaveros-card .card-a3 {
   grid-area: area3;
 }
-
-.mochileros-a4 {
+.llaveros-card .card-a4 {
   grid-area: area4;
 }
-
-.mochileros-text {
+.llaveros-card .card-text {
   grid-area: area5;
   color: #1d1212;
   font-family: "Playpen Sans", cursive;
@@ -558,101 +559,12 @@ body {
   width: 80%;
   margin-left: 10px;
 }
-
-.mochileros-precio {
+.llaveros-card .card-precio {
   grid-area: area6;
   color: #1d1212;
   font-family: Georgia, "Times New Roman", Times, serif;
   justify-self: center;
   align-self: center;
-}
-
-.llaveros-mochileros img, .llaveros-decorados img, .llaveros-simples img {
-  width: 90%;
-  height: 90%;
-  border-radius: 2%;
-}
-
-/*simples*/
-.simples-a1 {
-  grid-area: area1;
-}
-
-.simples-a2 {
-  grid-area: area2;
-}
-
-.simples-a3 {
-  grid-area: area3;
-}
-
-.simples-a4 {
-  grid-area: area4;
-}
-
-.simples-text {
-  grid-area: area5;
-  color: #1d1212;
-  font-family: "Playpen Sans", cursive;
-  font-size: 22px;
-  width: 70%;
-  margin-left: 10px;
-}
-
-.simples-precio {
-  grid-area: area6;
-  color: #1d1212;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  justify-self: center;
-  align-self: center;
-}
-
-.llaveros-simples img {
-  width: 90%;
-  height: 90%;
-  border-radius: 2%;
-}
-
-/*decorados*/
-.decorados-a1 {
-  grid-area: area1;
-}
-
-.decorados-a2 {
-  grid-area: area2;
-}
-
-.decorados-a3 {
-  grid-area: area3;
-}
-
-.decorados-a4 {
-  grid-area: area4;
-}
-
-.decorados-text {
-  grid-area: area5;
-  color: #1d1212;
-  font-family: "Playpen Sans", cursive;
-  font-size: 22px;
-  width: 70%;
-  align-self: center;
-  margin-left: 10px;
-}
-
-.decorados-precio {
-  grid-area: area6;
-  color: #1d1212;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  justify-self: center;
-  align-self: center;
-}
-
-.llaveros-decorados img {
-  width: 95%;
-  height: 95%;
-  object-fit: cover;
-  border-radius: 2%;
 }
 
 .llaveros-inspo {
@@ -758,18 +670,18 @@ body {
   }
   /*pagina llaveros :D*/
   .llaveros-texto {
-    padding-left: 0%;
-    padding-right: 0%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 30px;
   }
   .llaveros-texto .llaveros-area1 {
-    font-size: 30px;
-    padding: 0;
-    margin: 0;
+    font-size: 3rem;
     align-self: center;
   }
   .llaveros-texto .llaveros-area2 {
     font-size: 18px;
-    width: 98%;
+    width: 95%;
+    justify-self: center;
   }
   .llaveros-texto .llaveros-area3 {
     font-size: 18px;
@@ -781,9 +693,13 @@ body {
     width: 80%;
     justify-self: center;
   }
-  .mochileros-text {
+  .llaveros-card .card-text {
     font-size: 16px;
     width: 100%;
+  }
+  .llaveros-card img {
+    min-width: 100px;
+    min-height: 130px;
   }
   .llaveros-inspo {
     font-size: 22px;
@@ -795,7 +711,7 @@ body {
   .collares-discos {
     display: grid;
     grid-template-columns: repeat(4, 22%);
-    grid-template-rows: 1fr, 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: "area1 area2 area5 area5" "area6 area6 area3 area4";
     align-items: center;
     justify-items: center;
@@ -813,7 +729,8 @@ body {
   }
   .collares-dijes {
     display: grid;
-    grid-template-columns: 50% 50%;
+    justify-content: center;
+    grid-template-columns: 45% 45%;
     grid-template-rows: repeat(4, 1fr);
     grid-area: "area1 area2" "area3 area4" "area5 area6" "area7 area8";
   }
@@ -829,7 +746,7 @@ body {
     min-width: 120px;
     min-height: 180px;
     width: 100%;
-    height: 100%;
+    height: 90%;
   }
   .collar-card h2 {
     font-size: 20px;
@@ -854,11 +771,12 @@ body {
   }
   /*pagina aritos*/
   .aritos-products {
+    margin: 0;
     grid-template-columns: repeat(2, 40%);
     grid-template-rows: repeat(5, 1fr);
-    grid-template-areas: "area1 area2" "area3 area4" "area5 area6" "area7 area8" "area9 none";
+    grid-template-areas: "area1 area2" "area3 area4" "area5 area6" "area7 area8" "area9 area9";
     gap: 20px;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
   }
   .aritos-card {
@@ -877,20 +795,156 @@ body {
     font-size: 16spx;
   }
 }
-@media (max-width: 550px) {
-  .footer-link {
+@media (max-width: 600px) {
+  .llaveros-card {
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    width: 100%;
+  }
+  .llaveros-card img {
+    min-width: 100px;
+    min-height: 130px;
+  }
+}
+@media (max-width: 510px) {
+  .aritos-card {
+    padding: 5px;
+    max-height: 241px;
+  }
+  .aritos-card h3 {
+    font-size: 15px;
+  }
+  .aritos-card h4 {
+    font-size: 14px;
+  }
+  .llaveros-texto {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-items: center;
+    align-content: center;
+  }
+  .llaveros-texto .llaveros-area1 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+  }
+  .llaveros-texto .llaveros-area2 {
+    font-size: 18px;
+    width: 70%;
+  }
+  .llaveros-texto .llaveros-area3 {
+    padding: 0;
+    font-size: 18px;
+  }
+  .llaveros-texto .llaveros-instagram {
+    padding: 0;
+    font-size: 18px;
+    width: max-content;
+  }
+  .llaveros-inspo {
+    font-size: 18px;
+  }
+  .llaveros-inspo h2 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 490px) {
+  .footer-ul {
     padding-left: 0;
+    gap: 10px;
+    font-size: 12px;
+  }
+  .footer-ul h1 {
+    font-size: 14px;
   }
   .collares-discos {
     padding: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: "area1 area2" "area5 area6" "area3 area4";
+    grid-template-rows: 1fr 10rem 1fr 60px;
+    grid-template-areas: "area1 area2" "area5 area5" "area3 area4" "area6 area6";
   }
   .collares-discos img {
     max-height: 240px;
     max-width: 145px;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+  }
+  .collares-discos .collar-disc-5 {
+    font-size: 14px;
+    width: 80%;
+  }
+  .collares-dijes {
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+  }
+  .collares-dijes .collar-card {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .collares-dijes .collar-card img {
+    min-height: 110px;
+    min-width: 120px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .collares-dijes .collar-card h2 {
+    font-size: 16px;
+  }
+  .collares-dijes .collar-card h3 {
+    font-size: 14px;
+    width: 100%;
+    align-self: center;
+  }
+  .main-redes {
+    max-width: 250px;
+    max-height: 80px;
+    width: 100%;
+    height: 100%;
+    bottom: -15%;
+  }
+  .main-redes h2 {
+    font-size: 18px;
+  }
+  .main-tarjetita .main-text {
+    font-size: 17px;
+  }
+  .main-tarjetita:nth-child(1) {
+    margin-top: 20%;
+  }
+  .aritos-titulo p {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+  .llaveros-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+  }
+  .llaveros-card .card-text {
+    max-width: 50%;
+    padding: 5px;
+    padding-top: 20px;
+  }
+  .llaveros-card .card-precio {
+    max-width: 45%;
+  }
+  .llaveros-card img {
+    max-width: 115px;
+    max-height: 145px;
+    object-fit: cover;
+    width: 45%;
   }
 }
 .navbar {

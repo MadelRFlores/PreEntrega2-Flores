@@ -9,6 +9,7 @@
         }
     }
 }
+
 @media (max-width: 860px){
     /*header*/
     header {
@@ -87,17 +88,17 @@
     }
     /*pagina llaveros :D*/
     .llaveros-texto{
-        padding-left: 0%; 
-        padding-right: 0%;
+        padding-left: 0; 
+        padding-right: 0;
+        margin-top: 30px;
         .llaveros-area1{
-            font-size: 30px;
-            padding: 0;
-            margin: 0;
+            font-size: 3rem;
             align-self: center;
         }
         .llaveros-area2{
             font-size: 18px;
-            width: 98%;
+            width: 95%;
+            justify-self: center;
         }
         .llaveros-area3{
             font-size: 18px;
@@ -110,9 +111,15 @@
             justify-self: center;
         }
     }
-    .mochileros-text{
-        font-size: 16px;
-        width: 100%;
+    .llaveros-card{
+        .card-text{
+            font-size: 16px;
+            width: 100%;
+        }
+        img{
+            min-width: 100px;
+            min-height: 130px;
+        }
     }
     .llaveros-inspo{
         font-size: 22px;
@@ -124,7 +131,7 @@
     .collares-discos{
         display: grid;
         grid-template-columns: repeat(4, 22%);
-        grid-template-rows: 1fr, 1fr ;
+        grid-template-rows: 1fr 1fr ;
         grid-template-areas: 
         'area1 area2 area5 area5'
         'area6 area6 area3 area4';
@@ -144,13 +151,14 @@
     }
     .collares-dijes{
       display: grid;
-      grid-template-columns: 50% 50%;
+      justify-content: center;
+      grid-template-columns: 45% 45%;
       grid-template-rows: repeat(4, 1fr);
       grid-area:
-      "area1 area2"
-      "area3 area4"
-      "area5 area6"
-      "area7 area8";
+      'area1 area2'
+      'area3 area4'
+      'area5 area6'
+      'area7 area8';
     }
     .collar-card{
       width: 90%;
@@ -163,7 +171,7 @@
         min-width: 120px;
         min-height: 180px;
         width: 100%;
-        height: 100%;
+        height: 90%;
       }
       h2{
         font-size: 20px;
@@ -194,16 +202,17 @@
     }
     /*pagina aritos*/
     .aritos-products{
+     margin: 0;
      grid-template-columns: repeat(2, 40%);
      grid-template-rows: repeat(5, 1fr);
      grid-template-areas: 
-     "area1 area2"
-     "area3 area4"
-     "area5 area6"
-     "area7 area8"
-     "area9 none";
+     'area1 area2'
+     'area3 area4'
+     'area5 area6'
+     'area7 area8'
+     'area9 area9';
      gap: 20px;
-     justify-content: center;
+     justify-content: space-evenly;
      align-items: center;
     }
     .aritos-card{
@@ -223,23 +232,174 @@
     }
 }
 
-@media (max-width: 550px){
-    .footer-link{
-        padding-left: 0;
+@media (max-width: 600px){
+    .llaveros-card{
+        margin-left: 0;
+        margin-right: 0;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 5px;
+        width: 100%;
+        img{
+            min-width: 100px;
+            min-height: 130px;
+        }
     }
+    
+}
+
+@media (max-width: 510px){
+    .aritos-card{
+        padding: 5px;
+        max-height: 241px;
+        h3{
+            font-size: 15px;
+        }
+        h4{
+            font-size: 14px;
+        }
+    }
+    
+    .llaveros-texto{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-items: center;
+        align-content: center;
+
+        .llaveros-area1{
+            font-size: 2.5rem;
+            margin-top: 20px;
+        }
+        .llaveros-area2{
+            font-size: 18px;
+            width: 70%;
+        }
+        .llaveros-area3{
+            padding: 0;
+            font-size: 18px;
+        }
+        .llaveros-instagram{
+            padding: 0;
+            font-size: 18px;
+            width:max-content ;
+        }
+    }
+    .llaveros-inspo{
+        font-size: 18px;
+        h2{
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 490px){
+    .footer-ul{
+        padding-left: 0;
+        gap: 10px;
+        font-size: 12px;
+        h1{
+            font-size: 14px;
+        }
+    }
+
     .collares-discos{
         padding: 20px;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: 1fr 10rem 1fr 60px;
         grid-template-areas: 
         "area1 area2"
-        "area5 area6"
-        "area3 area4";
+        "area5 area5"
+        "area3 area4"
+        "area6 area6";
         img{
             max-height: 240px;
             max-width: 145px;
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+        }
+        .collar-disc-5{
+            font-size: 14px;
+            width: 80%;
+        }
+    }
+    .collares-dijes{
+        gap: 8px;
+        align-items: center;
+        justify-content: center;
+     .collar-card{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        img{
+            min-height: 110px;
+            min-width: 120px;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        h2{
+            font-size: 16px;
+        }
+        h3{
+            font-size: 14px;
+            width: 100%;
+            align-self: center;
+        }
+     }
+    }
+   
+    .main-redes{
+      max-width: 250px;
+      max-height: 80px;
+      width: 100%;
+      height: 100%;
+      bottom: -15%;
+      h2{
+        font-size: 18px;
+      }
+    }
+    .main-tarjetita{
+        .main-text{
+            font-size: 17px;
+        }
+    }
+    .main-tarjetita:nth-child(1){
+        margin-top: 20%;
+    }
+
+    .aritos-titulo{
+        p{
+            font-size: 1.2rem;
+            width: 100%;
+        }
+    }
+
+    .llaveros-card{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 25px;
+        align-items: center;
+        justify-content: center;
+        .card-text{
+            max-width: 50%;
+            padding: 5px;
+            padding-top: 20px;
+        }
+        .card-precio{
+            max-width: 45%;
+        }
+        img{
+            max-width: 115px;
+            max-height: 145px;
+            object-fit: cover;
+            width: 45%;
         }
     }
 }
+
 
