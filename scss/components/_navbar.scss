@@ -35,6 +35,8 @@ header {
   
   .nav-link:hover {
     font-size: 1.5rem;
+    color: $white-color;
+    padding: 8px;
   }
   
   .nav-list:hover .nav-link:not(:hover) {

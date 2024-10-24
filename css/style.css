@@ -47,6 +47,8 @@ nav {
 
 .nav-link:hover {
   font-size: 1.5rem;
+  color: #f9fedc;
+  padding: 8px;
 }
 
 .nav-list:hover .nav-link:not(:hover) {
@@ -811,7 +813,7 @@ body {
 }
 @media (max-width: 510px) {
   .aritos-card {
-    padding: 5px;
+    padding: 4px;
     max-height: 241px;
   }
   .aritos-card h3 {
